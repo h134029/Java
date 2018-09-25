@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author olavf
+ *
+ */
+module EasyGraphicsTest {
+}
