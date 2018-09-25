@@ -57,7 +57,7 @@ public class GPSDataConverter {
 		int n = timesstr.length;
 
 		// tabeller for konvertert gps data
-		times = new int[n];            // ny tabell for tidsinformasjon i sekunder (int)
+		times = new int[n];         // ny tabell for tidsinformasjon i sekunder (int)
 		latitudes = new double[n];  // ny tabell for breddegrad (double)
 		longitudes = new double[n]; // ny tabell for lengdegrad (double)
 		elevations = new double[n]; // ny tabell for høyde (double)

@@ -61,7 +61,7 @@ public class ShowRoute extends EasyGraphics {
 	
 	public double ystep() {
 	
-		double ystep = 1.0;
+		double ystep;
 		
 		// TODO
 		// OPPGAVE - START
@@ -87,7 +87,7 @@ public class ShowRoute extends EasyGraphics {
 		int timescaling = Integer.parseInt(getText("Tidsskalering"));
 
 		// draw the locations
-		for (int i = 0; i < latitudes.length; i++) {
+		for (int i = 1; i < latitudes.length; i++) {
 
 			int x,y,x2,y2;
 
@@ -125,12 +125,12 @@ public class ShowRoute extends EasyGraphics {
 		double maxspeed = gpscomputer.maxSpeed();
 		double averageSpeed = gpscomputer.averageSpeed();
 		double totalKcal = gpscomputer.totalKcal(GPSComputer.WEIGHT);
-		drawString(String.format("Total Time     :    %02d:%02d:%02d%n", (tid/3600), ((tid%3600)/60), (tid%60)), MARGIN, TEXTDISTANCE);
-		drawString(String.format("Total distance :    %.2f km%n", distance/1000),MARGIN, TEXTDISTANCE*2);
-		drawString(String.format("Total elevation:    %.2f m%n", elevation), MARGIN, TEXTDISTANCE*3);
-		drawString(String.format("Max speed      :    %.2f km/t%n",  maxspeed), MARGIN, TEXTDISTANCE*4);
-		drawString(String.format("Average speed  :    %.2f km/t%n",  averageSpeed), MARGIN, TEXTDISTANCE*5);
-		drawString(String.format("Energy         :    %.2f kcal%n", totalKcal/1000), MARGIN, TEXTDISTANCE*6);
+		drawString(String.format("Total Time       :    %02d:%02d:%02d%n", (tid/3600), ((tid%3600)/60), (tid%60)), MARGIN, TEXTDISTANCE);
+		drawString(String.format("Total distance   :    %.2f km%n", distance/1000),MARGIN, TEXTDISTANCE*2);
+		drawString(String.format("Total elevation  :    %.2f m%n", elevation), MARGIN, TEXTDISTANCE*3);
+		drawString(String.format("Max speed        :    %.2f km/t%n",  maxspeed), MARGIN, TEXTDISTANCE*4);
+		drawString(String.format("Average speed    :    %.2f km/t%n",  averageSpeed), MARGIN, TEXTDISTANCE*5);
+		drawString(String.format("Energy           :    %.2f kcall%n", totalKcal), MARGIN, TEXTDISTANCE*6);
 		// OPPGAVE - SLUTT;
 	}
 

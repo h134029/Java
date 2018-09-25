@@ -93,10 +93,9 @@ public class GPSUtils {
 
 		// TODO:
 		// OPPGAVE - START
-		double hr = secs/3600.0;
 		double d = distance(latitude1, longitude1, latitude2, longitude2);
 
-		speed = d/hr;
+		speed = (d/secs)*3.6;
 		// OPPGAVE - SLUTT
 
 		return speed;

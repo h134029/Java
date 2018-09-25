@@ -175,7 +175,6 @@ public class GPSComputer {
 	public double totalKcal(double weight) {
 
 		double totalkcal = 0;
-		double sum = 0.0;
 		// TODO
 		// OPPGAVE - START 
 		
@@ -183,7 +182,7 @@ public class GPSComputer {
 		// disse er definer i toppen av klassen og lese automatisk inn
 		double[] speeds = speeds();
 		for (int i=0; i<times.length-1; i++) {
-			sum += kcal(weight, times[i], speeds[i]);
+			totalkcal += kcal(weight, (times[i+1]-times[i]), speeds[i]);
 		}
 		// OPPGAVE - SLUTT
 		
@@ -208,7 +207,7 @@ public class GPSComputer {
 			System.out.format("Total elevation:    %.2f m%n", elevation);
 			System.out.format("Max speed      :    %.2f km/t%n",  maxspeed);
 			System.out.format("Average speed  :    %.2f km/t%n",  averageSpeed);
-			System.out.format("Energy         :    %.2f kcal%n", totalKcal/1000);
+			System.out.format("Energy         :    %.2f kcal%n", totalKcal);
 		// OPPGAVE - SLUTT
 	}
 	
