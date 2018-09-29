@@ -12,14 +12,11 @@ public class Arrayclass {
         int[] newArr = new int[i + j + 2];
         int k = newArr.length;
 
-        int[] a = arr1;
-        int[] b = arr2;
-
-        Arrays.sort(a);
-        Arrays.sort(b);
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
 
         while(k>0)
-            newArr[--k] = (j < 0 || (i >= 0 && a[i] >= b[j])) ? a[i--] : b[j--];
+            newArr[--k] = (j < 0 || (i >= 0 && arr1[i] >= arr2[j])) ? arr1[i--] : arr2[j--];
 
         return newArr;
     }
