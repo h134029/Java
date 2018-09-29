@@ -11,6 +11,11 @@ public class Main {
             System.out.print(i + " ");
         System.out.println();
         System.out.print(Arrayclass.equals(a, b));
+
+        int[][] terreng = { { 0, 0, 0, 3, 3, 3, 6, 7, 8, 10 },
+                            { 0, 0, 0, 3, 3, 3, 6, 7, 8, 10 },
+                            { 0, 0, 0, 3, 3, 3, 6, 7, 8, 10 } };
+        System.out.print(terreng[2][9]);
     }
 
 }

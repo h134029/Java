@@ -33,14 +33,25 @@ public class Flooding extends EasyGraphics {
         while (hav >= 0) {
 
             // TODO - START
-
-            // setColor(0,0,255); // blå - vann
-
-            // setColor(222,184,135); // lysebrun - tørt
-
-            // setColor(255,140,0); // oransje - søle
-
-            // fillCircle(MARGIN + * 2 * RADIUS,MARGIN + * 2* RADIUS,RADIUS);
+            for (int j = 0; j < terreng.length; j++) {
+                for (int i = 0; i < terreng[0].length; i++) {
+                    if (terreng[j][i] - hav <= 0) {
+                        setColor(0, 0, 255); // blå - vann
+                        drawCircle(MARGIN + (i * MARGIN),MARGIN + (j  *MARGIN), RADIUS);
+                        fillCircle(MARGIN + (i * MARGIN),MARGIN + (j  *MARGIN), RADIUS);
+                    }
+                    else if (terreng[j][i] - hav >= 0 && terreng[j][i] - hav <= 1) {
+                        setColor(255,140,0); // oransje - søle
+                        drawCircle(MARGIN + (i * MARGIN),MARGIN + (j  *MARGIN), RADIUS);
+                        fillCircle(MARGIN + (i * MARGIN),MARGIN + (j  *MARGIN), RADIUS);
+                    }
+                    else if (terreng[j][i] - hav > 1) {
+                        setColor(222,184,135); // lysebrun - tørt
+                        drawCircle(MARGIN + (i * MARGIN),MARGIN + (j  *MARGIN), RADIUS);
+                        fillCircle(MARGIN + (i * MARGIN),MARGIN + (j  *MARGIN), RADIUS);
+                    }
+                }
+            }
 
             // TODO - SLUTT
 
