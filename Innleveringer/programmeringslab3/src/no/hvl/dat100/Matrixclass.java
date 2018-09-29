@@ -52,12 +52,12 @@ public class Matrixclass {
             i++;
         }
     }
-    // d) Double the matrix value
+    // d) Multiply the matrix value
     public static int[][] scale(int tall, int[][] arr) {
         int[][] newArr = new int[arr.length][arr[0].length];
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                newArr[i][j] = arr[i][j]*2;
+                newArr[i][j] = arr[i][j]*tall;
             }
         }
         return newArr;
