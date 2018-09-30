@@ -116,14 +116,11 @@ public class GameController {
 		int checksum_rl = 0;
 		int i = 0;
 		int j = 0;
+		int k = TicTacToe.SIZE-1;
 
-		while( i < TicTacToe.SIZE) {
-			checksum_lr += (board[j++][i++] == player) ? 1 : 0;
-		}
-		int k = 0;
-		int l = TicTacToe.SIZE-1;
-		while( k < TicTacToe.SIZE && l >= 0) {
-			checksum_rl += (board[k++][l--] == player) ? 1 : 0;
+		while( i < TicTacToe.SIZE || k >= 0) {
+			checksum_lr += (board[j][i++] == player) ? 1 : 0;
+			checksum_rl += (board[j++][k--] == player) ? 1 : 0;
 		}
 		if (checksum_lr == TicTacToe.SIZE || checksum_rl == TicTacToe.SIZE) {
 			return true;
