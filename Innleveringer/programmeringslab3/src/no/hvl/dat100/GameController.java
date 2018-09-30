@@ -66,11 +66,9 @@ public class GameController {
 			gameover = checkVertical(x, player);
 			x++;
 		}
-
 		if (!gameover) {
 			gameover = checkDiagonals(player);
 		}
-
 		return gameover;
 	}
 
@@ -87,9 +85,7 @@ public class GameController {
 		} else {
 			return false;
 		}
-
 		// TODO - SLUTT
-
 	}
 
 	private boolean checkVertical(int x, char player) {
@@ -111,7 +107,6 @@ public class GameController {
 			return false;
 		}
 		// TODO - SLUTT
-
 	}
 
 	private boolean checkDiagonals(char player) {
@@ -119,15 +114,15 @@ public class GameController {
 		// TODO - START
 		int checksum_lr = 0;
 		int checksum_rl = 0;
-
 		int i = 0;
 		int j = 0;
+
 		while( i < TicTacToe.SIZE) {
 			checksum_lr += (board[j++][i++] == player) ? 1 : 0;
 		}
 		int k = 0;
 		int l = TicTacToe.SIZE-1;
-		while( k < TicTacToe.SIZE) {
+		while( k < TicTacToe.SIZE && l >= 0) {
 			checksum_rl += (board[k++][l--] == player) ? 1 : 0;
 		}
 		if (checksum_lr == TicTacToe.SIZE || checksum_rl == TicTacToe.SIZE) {
@@ -135,9 +130,6 @@ public class GameController {
 		} else {
 			return false;
 		}
-
 		// TODO - SLUTT
-
 	}
-
 }
