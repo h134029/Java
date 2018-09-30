@@ -1,5 +1,7 @@
 package no.hvl.dat100.tictactoe;
 
+import java.util.Arrays;
+
 public class GameController {
 
 	private char[][] board;
@@ -74,51 +76,68 @@ public class GameController {
 
 	private boolean checkHorizontal(int y, char player) {
 
-		boolean allequal = true;
-
-		// TicTacToe.SIZE gir størrelse på brettet
-
 		// TODO - START
+		char[] hor = new char[TicTacToe.SIZE];
+		// Array for horizontal player values that equals victory
+		for (int i=0; i<TicTacToe.SIZE; i++) {
+			hor[i] = player;
+		}
+		if (Arrays.equals(board[y],hor)) {
+			return true;
+		} else {
+			return false;
+		}
 
 		// TODO - SLUTT
 
-		// return allequal;
-		return false; // REMOVE ME
 	}
 
 	private boolean checkVertical(int x, char player) {
 
-		boolean allequal = true;
-
-		// TicTacToe.SIZE gir størrelse på brettet
-
 		// TODO - START
-
+		char[] ver = new char[TicTacToe.SIZE];
+		char[] ver_Test = new char[TicTacToe.SIZE];
+		// Array for vertical player values that equals victory
+		for (int i=0; i<TicTacToe.SIZE; i++) {
+			ver[i] = player;
+		}
+		// Array for [x] index player values going through y=j in the board array
+		for (int j=0; j<TicTacToe.SIZE; j++) {
+			ver_Test[j] = board[j][x];
+		}
+		if (Arrays.equals(ver, ver_Test)) {
+			return true;
+		} else {
+			return false;
+		}
 		// TODO - SLUTT
 
-		// return allequal;
-		return false; // REMOVE ME
 	}
 
 	private boolean checkDiagonals(char player) {
 
-		boolean allequal_lr = true; // for checking left to right diagonal
-		boolean allequal_rl = true; // for checking right to left diagonal
-
-		// TicTacToe.SIZE gir størrelse på brettet
-
 		// TODO - START
-		
-		// sjekk om alle karakterer/innganger på første diagonalen i
-		// 2-dim tabellen board har karakteren player
+		int checksum_lr = 0;
+		int checksum_rl = 0;
 
-		// sjekk om alle karakterer/innganger på andre diagonalen i
-		// 2-dim tabellen board har karakteren player
+		int i = 0;
+		int j = 0;
+		while( i < TicTacToe.SIZE) {
+			checksum_lr += (board[j++][i++] == player) ? 1 : 0;
+		}
+		int k = 0;
+		int l = TicTacToe.SIZE-1;
+		while( k < TicTacToe.SIZE) {
+			checksum_rl += (board[k++][l--] == player) ? 1 : 0;
+		}
+		if (checksum_lr == TicTacToe.SIZE || checksum_rl == TicTacToe.SIZE) {
+			return true;
+		} else {
+			return false;
+		}
 
 		// TODO - SLUTT
 
-		// return allequal_lr || allequal_rl;
-		return false; // REMOVE ME
 	}
 
 }
