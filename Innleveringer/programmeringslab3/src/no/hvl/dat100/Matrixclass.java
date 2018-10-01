@@ -67,7 +67,6 @@ public class Matrixclass {
         if (arr.length != arr[0].length) {
             throw new IllegalArgumentException("Matrisen må vere kvadratisk");
         }
-
         int[][] newArr = new int[arr.length][arr[0].length];
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {

@@ -1,4 +1,4 @@
-package no.hvl.dat100.tictactoe;
+package no.hvl.dat100;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
