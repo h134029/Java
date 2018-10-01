@@ -33,6 +33,7 @@ public class Flooding extends EasyGraphics {
         while (hav >= 0) {
 
             // TODO - START
+            // Oppgåve 3
             for (int j = 0; j < terreng.length; j++) {
                 for (int i = 0; i < terreng[0].length; i++) {
                     if (terreng[j][i] - hav <= 0) {
@@ -40,19 +41,18 @@ public class Flooding extends EasyGraphics {
                         drawCircle(MARGIN + (i * MARGIN),MARGIN + (j  *MARGIN), RADIUS);
                         fillCircle(MARGIN + (i * MARGIN),MARGIN + (j  *MARGIN), RADIUS);
                     }
-                    else if (terreng[j][i] - hav >= 0 && terreng[j][i] - hav <= 1) {
+                    else if (terreng[j][i] - hav >= 0 && terreng[j][i] - hav <= NESTEN_DEKKET) {
                         setColor(255,140,0); // oransje - søle
                         drawCircle(MARGIN + (i * MARGIN),MARGIN + (j  *MARGIN), RADIUS);
                         fillCircle(MARGIN + (i * MARGIN),MARGIN + (j  *MARGIN), RADIUS);
                     }
-                    else if (terreng[j][i] - hav > 1) {
+                    else if (terreng[j][i] - hav > NESTEN_DEKKET) {
                         setColor(222,184,135); // lysebrun - tørt
                         drawCircle(MARGIN + (i * MARGIN),MARGIN + (j  *MARGIN), RADIUS);
                         fillCircle(MARGIN + (i * MARGIN),MARGIN + (j  *MARGIN), RADIUS);
                     }
                 }
             }
-
             // TODO - SLUTT
 
             System.out.println("Angi havhøyde i tegnevinduet ...");

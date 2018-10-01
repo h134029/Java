@@ -75,12 +75,12 @@ public class GameController {
 	private boolean checkHorizontal(int y, char player) {
 
 		// TODO - START
-		char[] hor = new char[TicTacToe.SIZE];
-		// Array for horizontal player values that equals victory
+		char[] hor_Test = new char[TicTacToe.SIZE];
+
 		for (int i=0; i<TicTacToe.SIZE; i++) {
-			hor[i] = player;
+			hor_Test[i] = player;		// {player, player, ...n=i} Array
 		}
-		if (Arrays.equals(board[y],hor)) {
+		if (Arrays.equals(board[y],hor_Test)) {
 			return true;
 		} else {
 			return false;
@@ -91,15 +91,12 @@ public class GameController {
 	private boolean checkVertical(int x, char player) {
 
 		// TODO - START
-		char[] ver = new char[TicTacToe.SIZE];
 		char[] ver_Test = new char[TicTacToe.SIZE];
-		// Array for vertical player values that equals victory
+		char[] ver = new char[TicTacToe.SIZE];
+
 		for (int i=0; i<TicTacToe.SIZE; i++) {
-			ver[i] = player;
-		}
-		// Array for [x] index player values going through y=j in the board array
-		for (int j=0; j<TicTacToe.SIZE; j++) {
-			ver_Test[j] = board[j][x];
+			ver_Test[i] = player;		// {player, player, ...n=i} Array
+			ver[i] = board[i][x];		// {player value from [y=1,2,..SIZE-1] in x index [x]
 		}
 		if (Arrays.equals(ver, ver_Test)) {
 			return true;
