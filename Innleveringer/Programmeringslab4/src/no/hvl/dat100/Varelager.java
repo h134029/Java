@@ -43,14 +43,23 @@ public class Varelager {
     }
 
     public int[] finnVare(int vareNr) {
+        int counter = 0;
         int i = 0;
-        int j = 0;
-        int[] indexVare = new int[antall];
         while (i < antall && !erTom()) {
-            if(samling[i].getVarenr() == vareNr) {
-                indexVare[j++] = i;
+            if (samling[i].getVarenr() == vareNr) {
+                counter += 1;
             }
             i++;
+        }
+        int j = 0;
+        int k = 0;
+        int[] indexVare = new int[counter];
+        while (j < antall && !erTom()) {
+            if(samling[j].getVarenr() == vareNr) {
+                indexVare[k] = j;
+                k++;
+            }
+            j++;
         }
         return indexVare;
     }
@@ -66,29 +75,20 @@ public class Varelager {
     public Vare slett(int vareNr) {
 
         // Alle med slett vareNr = null
-        int index[] = finnVare(vareNr);
+        int[] index = finnVare(vareNr);
         for (int i = 0; i < index.length; i++) {
-            samling[index[i]] = null;
+            int j = index[i];
+            samling[j] = null;
             antall--;
         }
-        int j = 0;
-        int counter = 0;
-        int seeker = 1;
-        // insert next value j+seeker if null
-        while (counter < samling.length) {
-            if (samling[j]==null) {
-                samling[j] = samling[j+seeker];
-                if (samling[j]!=null) {
-                    samling[j+seeker] = null;
-                    j++;
-                    seeker = 0;
-                }
-                seeker += 1;
-            } else {
-                j++;
-            }
-            counter++;
 
+        for (int j = 0; j < samling.length; j++) {
+            if (samling[j]==null) {
+                for (int k = j+1; k < samling.length; k++) {
+                    samling[k-1] = samling[k];
+                }
+                samling[samling.length-1] = null;
+            }
         }
         return null;
     }

@@ -8,7 +8,7 @@ public class Varelager_test {
         Varelager VL1 = new Varelager(10);
 
         VL1.leggTil(v1);
-        VL1.leggTil(v2);
+        VL1.leggTil(v1);
         VL1.leggTil(v3);
         VL1.leggTil(v2);
         VL1.leggTil(v1);
@@ -19,7 +19,8 @@ public class Varelager_test {
         VL1.leggTil(v1);
 
         VL1.slett(666);
-
+        //int[] a = VL1.finnVare(666);
+        //System.out.println(a[0] + ", " + a[1] + ", " + a[2]);
         for (int i=0; i < 10;i++) {
             System.out.println(VL1.samling[i]);
         }
