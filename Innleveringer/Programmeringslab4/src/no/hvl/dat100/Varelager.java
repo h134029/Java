@@ -43,6 +43,7 @@ public class Varelager {
     }
 
     public int[] finnVare(int vareNr) {
+        // Finner antall varer
         int counter = 0;
         int i = 0;
         while (i < antall && !erTom()) {
@@ -54,6 +55,8 @@ public class Varelager {
         int j = 0;
         int k = 0;
         int[] indexVare = new int[counter];
+
+        // Lager ein index tabell der varene er
         while (j < antall && !erTom()) {
             if(samling[j].getVarenr() == vareNr) {
                 indexVare[k] = j;
@@ -74,14 +77,16 @@ public class Varelager {
     }
     public Vare slett(int vareNr) {
 
-        // Alle med slett vareNr = null
+        // Finner index til varer som skal slettes
         int[] index = finnVare(vareNr);
+
+        // Alle valgte objekter blir satt til null
         for (int i = 0; i < index.length; i++) {
             int j = index[i];
             samling[j] = null;
             antall--;
         }
-
+        // Flytter stegvis alle null verdier bakover
         for (int j = 0; j < samling.length; j++) {
             if (samling[j]==null) {
                 for (int k = j+1; k < samling.length; k++) {

@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d509b94-3e02-4815-a126-a246d21dc707" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab4/no/hvl/dat100/Varelager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programmeringslab4/no/hvl/dat100/Varelager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab4/no/hvl/dat100/Varelager_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programmeringslab4/no/hvl/dat100/Varelager_test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/no/hvl/dat100/Varelager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat100/Varelager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat100/Varelager_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat100/Varelager_test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,12 +51,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="598" />
+          <entry key="java" value="803" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="598" />
+          <entry key="JAVA" value="803" />
         </counts>
       </usages-collector>
     </session>
@@ -89,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Varelager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="344">
+              <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -131,7 +126,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-6" />
     <option name="width" value="1932" />
     <option name="height" value="1031" />
@@ -365,8 +360,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Varelager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="344">
+          <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
         </state>
       </provider>
     </entry>
