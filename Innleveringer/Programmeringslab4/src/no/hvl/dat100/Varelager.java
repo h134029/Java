@@ -10,20 +10,25 @@ public class Varelager {
         samling = new Vare[startKapasitet];
         antall = 0;
     }
+
     public Varelager() {
         this(STDK);
     }
+
     public Vare[] getVare() {
         return samling;
     }
+
     public int getAntall() {
         return antall;
     }
+
     public boolean erTom() {
         return (antall == 0);
     }
 
     // Metoder
+    // Legg til vare
     public void leggTil(Vare v) {
         if (antall < samling.length) {
             samling[antall] = v;
@@ -33,6 +38,7 @@ public class Varelager {
         }
     }
 
+    // Søk om vare eksisterer true/false
     public boolean soekVare(int vareNr) {
         Boolean funnet = false;
         int i = 0;
@@ -42,13 +48,14 @@ public class Varelager {
         return funnet;
     }
 
+    // Finner index verdier til varene
     public int[] finnVare(int vareNr) {
         // Finner antall varer
         int counter = 0;
         int i = 0;
         while (i < antall && !erTom()) {
             if (samling[i].getVarenr() == vareNr) {
-                counter += 1;
+                counter++;
             }
             i++;
         }
@@ -58,7 +65,7 @@ public class Varelager {
 
         // Lager ein index tabell der varene er
         while (j < antall && !erTom()) {
-            if(samling[j].getVarenr() == vareNr) {
+            if (samling[j].getVarenr() == vareNr) {
                 indexVare[k] = j;
                 k++;
             }
@@ -67,15 +74,18 @@ public class Varelager {
         return indexVare;
     }
 
+    // Totalpris i lageret
     public double totalPris() {
         double totpris = 0;
         int i = 0;
         while (i < antall && !erTom()) {
             totpris += samling[i++].getPris();
         }
-        return totpris;
+        return round(totpris, 2);
     }
-    public Vare slett(int vareNr) {
+
+    // Sletter varer med gitt varenummer
+    public void slett(int vareNr) {
 
         // Finner index til varer som skal slettes
         int[] index = finnVare(vareNr);
@@ -87,14 +97,42 @@ public class Varelager {
             antall--;
         }
         // Flytter stegvis alle null verdier bakover
-        for (int j = 0; j < samling.length; j++) {
-            if (samling[j]==null) {
-                for (int k = j+1; k < samling.length; k++) {
-                    samling[k-1] = samling[k];
+        int j = 0;
+        int counter = 0;
+
+        while (counter < antall) {
+            int k = 1;
+            boolean notnull = false;
+            if (samling[j] == null) {
+                while (!notnull) {
+                    samling[j] = samling[k];
+                    notnull = (samling[j]!=null);
+                    if (samling[j]!=null) {samling[k] = null; counter++;}
+                    k++;
                 }
-                samling[samling.length-1] = null;
             }
+            j++;
         }
-        return null;
+    }
+
+    // Diverse metoder
+    // Runder av til gitt desimalplass
+    public double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        long factor = (long) Math.pow(10, places);
+        value = value * factor;
+        long tmp = Math.round(value);
+        return (double) tmp / factor;
+    }
+    // Printer lageret
+    public void lagerPrint() {
+        System.out.println();
+        System.out.println("Varer i lageret:");
+        System.out.println("______________________________________________________");
+        for (int i = 0; i < antall; i++) {
+            System.out.println(samling[i].toString());
+        }
     }
 }
+

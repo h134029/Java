@@ -42,11 +42,12 @@ public class Vare {
         double moms = pris * 0.2;
         return moms;
     }
+
     public boolean billigareEnn(Vare v) {
         return (pris < v.pris);
     }
+
     public String toString() {
-        String ut = "Varenummer: " + varenr + ", " + "Navn: " + navn + ", " + "Pris: " + pris;
-        return ut;
+        return "Varenummer: " + String.format("%1$-10s", varenr)  + "Navn: " + String.format("%1$-15s", navn) + "Pris: " + String.format("%1$-15s", pris);
     }
 }
