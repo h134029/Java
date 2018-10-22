@@ -11,7 +11,7 @@ public class Main {
         Arrayclass.arrayprint(c);
         System.out.println();
 
-        int[] e = Arrayclass.arraybuilder(10000000);
+        int[] e = Arrayclass.arraybuilder(100000000);
         Arrayclass.arraytimer(e);
     }
 }
