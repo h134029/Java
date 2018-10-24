@@ -1,4 +1,4 @@
-package no.hvl.dat100;
+package no.hvl.dat100.Oppgave3_4;
 
 public class Vare_test {
     public static void main(String[] args) {

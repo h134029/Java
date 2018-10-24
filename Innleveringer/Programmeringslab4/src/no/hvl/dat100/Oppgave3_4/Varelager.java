@@ -1,4 +1,4 @@
-package no.hvl.dat100;
+package no.hvl.dat100.Oppgave3_4;
 
 public class Varelager {
     private final static int STDK = 100;
@@ -43,31 +43,33 @@ public class Varelager {
         Boolean funnet = false;
         int i = 0;
         while (!funnet && i < antall && !erTom()) {
-            funnet = (samling[i++].getVarenr() == vareNr);
+            funnet = (samling[i].getVarenr() == vareNr);
+            i++;
         }
         return funnet;
     }
+    public Vare sok(int vareNr) {
+        Vare resultat = null;
+        int index = finnVare(vareNr);
+        if (index == -1) {
+            resultat = null;
+        } else {
+            resultat = samling[index];
+        }
+        return resultat;
+    }
 
     // Finner index verdier til varene
-    public int[] finnVare(int vareNr) {
+    public int finnVare(int vareNr) {
         // Finner antall varer
-        int counter = 0;
-        int i = 0;
-        while (i < antall && !erTom()) {
-            if (samling[i].getVarenr() == vareNr) {
-                counter++;
-            }
-            i++;
-        }
-        int j = 0;
-        int k = 0;
-        int[] indexVare = new int[counter];
 
-        // Lager ein index tabell der varene er
+        int indexVare = -1;
+        int j = 0;
+        // Lager ein index verdi der varen er
         while (j < antall && !erTom()) {
             if (samling[j].getVarenr() == vareNr) {
-                indexVare[k] = j;
-                k++;
+                indexVare = j;
+                break;
             }
             j++;
         }
@@ -85,34 +87,16 @@ public class Varelager {
     }
 
     // Sletter varer med gitt varenummer
-    public void slett(int vareNr) {
-
-        // Finner index til varer som skal slettes
-        int[] index = finnVare(vareNr);
-
-        // Alle valgte objekter blir satt til null
-        for (int i = 0; i < index.length; i++) {
-            int j = index[i];
-            samling[j] = null;
+    public Vare slett(int vareNr) {
+        int index = finnVare(vareNr);
+        Vare vare = null;
+        if (index != -1) {
+            vare = samling[index];
+            samling[index] = samling[antall-1];
+            samling[antall-1] = null;
             antall--;
         }
-        // Flytter stegvis alle null verdier bakover
-        int j = 0;
-        int counter = 0;
-
-        while (counter < antall) {
-            int k = 1;
-            boolean notnull = false;
-            if (samling[j] == null) {
-                while (!notnull) {
-                    samling[j] = samling[k];
-                    notnull = (samling[j]!=null);
-                    if (samling[j]!=null) {samling[k] = null; counter++;}
-                    k++;
-                }
-            }
-            j++;
-        }
+        return vare;
     }
 
     // Diverse metoder

@@ -1,4 +1,4 @@
-package no.hvl.dat100;
+package no.hvl.dat100.Oppgave1;
 
 public class Kvadrat {
     public int sidelengde;
