@@ -39,8 +39,8 @@ public class Terning {
         if ( tab == null || tab.length == 0 ) return -1; // null or empty
 
         int storstIndex = 0;
-        for ( int i = 1; i < tab.length; i++ ) {
-            if ( tab[i] > tab[storstIndex] ) storstIndex = i;
+        for (int i = 1; i < tab.length; i++) {
+            if (tab[i] > tab[storstIndex]) storstIndex = i;
         }
 
         return storstIndex;
