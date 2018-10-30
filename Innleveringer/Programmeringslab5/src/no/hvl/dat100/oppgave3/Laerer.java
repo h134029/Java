@@ -18,6 +18,6 @@ public class Laerer extends Person {
 
     // Returnerer all object informasjon som String
     public String toString() {
-        return super.toString() + ", Månedslønn: " + manadslonn + ", Kontonummer: " + kontonummer;
+        return super.toString() + String.format("%-25s","Månedslønn: " + manadslonn) + String.format("%-20s","Kontonummer: " + kontonummer);
     }
 }

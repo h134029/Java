@@ -18,6 +18,6 @@ public class Student extends Person {
 
     // Returnerer all object informasjon som String
     public String toString() {
-        return super.toString() + ", Studentnummer: " + studentnummer + ", Klasse: " + klasse;
+        return super.toString() + String.format("%-25s","Studentnummer: " + studentnummer) + String.format("%-20s","Klasse: " + klasse);
     }
 }

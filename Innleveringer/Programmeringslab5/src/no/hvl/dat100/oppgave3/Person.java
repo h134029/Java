@@ -28,6 +28,7 @@ public class Person {
 
     // Returnerer all object informasjon som String
     public String toString() {
-        return "Etternavn: " + etternavn + ", Fornavn: " + fornavn + ", Fødselsår: " + foedselsaar + ", Kjønn: " + kjoenn;
+        return String.format("%-25s","Etternavn: " + etternavn) + String.format("%-20s", "Fornavn: " + fornavn)
+                + String.format("%-20s", "Fødselsår: " + foedselsaar) + String.format("%-12s", "Kjønn: " + kjoenn);
     }
 }
