@@ -9,6 +9,7 @@ public class Laerer extends Person {
         this.manadslonn = manadslonn;
         this.kontonummer = kontonummer;
     }
+    public Laerer() { this(0,0,"","",0); }
     // Get/Set
     public int getManadslonn() { return manadslonn; }
     public int getKontonummer() { return kontonummer; }

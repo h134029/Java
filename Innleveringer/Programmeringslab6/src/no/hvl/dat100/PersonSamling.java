@@ -13,10 +13,13 @@ public class PersonSamling extends Person{
         samling = new Person[startKapasitet];
         antall = 0;
     }
-    // Get
+    // Get/Set
     public int getAntall() { return antall; }
-    public Person[] getSamling() { return samling;
-    }
+    public Person[] getSamling() { return samling; }
+
+    public void setAntall(int antall) { this.antall = antall; }
+
+    // Legg til og utvid slått sammen
     public boolean leggTilUtvid(Person p) {
         // True/False om vi legger han inn (erLik == False)
         boolean sammePers = false;
@@ -27,6 +30,7 @@ public class PersonSamling extends Person{
         if (antall < samling.length && !sammePers) {
             samling[antall] = p;
             antall++;
+            p.index = antall;
 
         // over startkapasitet, lager ny samling[startKapasitet*2]
         } else if (antall >= samling.length && !sammePers){
@@ -37,6 +41,7 @@ public class PersonSamling extends Person{
             }
             // Siste Person det ikkje var plass til
             temp[antall] = p;
+            p.index = antall;
             antall++;
             // Ny Samling, fører inn frå temp
             samling = new Person[temp.length];
@@ -80,12 +85,14 @@ public class PersonSamling extends Person{
         System.out.println(String.format("%-17s","Personer totalt:") + (kvinner + menn));
     }
     public int finnPerson(Person p) {
-        int index = -1;
+        int indeks = -1;
         int i = 0;
-        while (index < 0) {
-            index = (samling[i++].erLik(p)) ? i : -1;
+        while (indeks < 0 && i < antall) {
+            if (getSamling()[i].erLik(p)) {indeks = i;}
+            i++;
+
         }
-        return index;
+        return indeks;
     }
     public boolean finnes(Person p) {
         return erLik(p);
@@ -107,5 +114,20 @@ public class PersonSamling extends Person{
         }
         String ut = utBuilder.toString();
         return ut;
+    }
+    public boolean slett(Person p) {
+        boolean slettet = false;
+        int j = p.getIndex();
+        try {
+            samling[j] = null;
+            samling[j] = samling[antall-1];
+            samling[antall-1] = null;
+            samling[j].setIndex(j);
+            slettet = true;
+
+        } catch (Exception e){
+            System.out.println("Person ikkje funnet");
+        }
+        return slettet;
     }
 }

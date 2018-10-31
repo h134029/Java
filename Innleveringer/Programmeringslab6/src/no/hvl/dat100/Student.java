@@ -9,6 +9,7 @@ public class Student extends Person {
         this.studentnummer = studentnummer;
         this.klasse = klasse;
     }
+    public Student() {this(0,"","","",0);}
     // Get/Set
     public int getStudentnummer() { return studentnummer; }
     public String getKlasse() { return klasse; }
@@ -18,6 +19,6 @@ public class Student extends Person {
 
     // Returnerer all object informasjon som String
     public String toString() {
-        return "STUDENT" + "\n" + super.toString() + "\n" + klasse + "\n" + studentnummer + "\n";
+        return "STUDENT" + "\n" + super.toString() +  "\n" + studentnummer + "\n" + klasse + "\n";
     }
 }
