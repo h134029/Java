@@ -28,11 +28,12 @@ public class Person {
 
     // Metoder
     public String toString() {
-        return foedselsnummer + "\n" + etternavn + "\n" + fornavn;
+        return foedselsnummer + "\n" + etternavn + "\n" + fornavn + "\n";
     }
+
     public boolean erLik(Person p) {
-        // Return true viss samme fødselsnummer og ikkje samme index (samme objekt)
-        return (p.getFoedselsnummer()==foedselsnummer && p.index != index);
+        // Return true viss samme fødselsnummer
+        return (p.getFoedselsnummer() == foedselsnummer);
     }
     public boolean erKvinne() {
         String tall = String.valueOf(foedselsnummer);

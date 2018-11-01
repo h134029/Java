@@ -14,35 +14,35 @@ public class TestLaerer {
     public void testConstructor() {
         Laerer laerer = new Laerer(35000,370540,"Mjaanes", "Jan",1010011700);
 
-        assertEquals(laerer.getEtternavn(),"Olsen");
-        assertEquals(laerer.getFornavn(),"Ole");
-        assertEquals(laerer.getFoedselsnummer(),7);
-        assertEquals(laerer.getManadslonn(),1000);
-        assertEquals(laerer.getKontonummer(),7676);
+        assertEquals(laerer.getEtternavn(),"Mjaanes");
+        assertEquals(laerer.getFornavn(),"Jan");
+        assertEquals(laerer.getFoedselsnummer(),1010011700);
+        assertEquals(laerer.getManadslonn(),35000);
+        assertEquals(laerer.getKontonummer(),370540);
     }
 
     @Test
     public void testSet() {
         Laerer laerer = new Laerer();
 
-        laerer.setEtternavn("Olsen");
-        laerer.setFornavn("Ole");
-        laerer.setFoedselsnummer(7);
-        laerer.setManadslonn(1000);
-        laerer.setKontonummer(7676);
+        laerer.setEtternavn("Mjaanes");
+        laerer.setFornavn("Jan");
+        laerer.setFoedselsnummer(1010011700);
+        laerer.setManadslonn(35000);
+        laerer.setKontonummer(370540);
 
-        assertEquals(laerer.getEtternavn(),"Olsen");
-        assertEquals(laerer.getFornavn(),"Ole");
-        assertEquals(laerer.getFoedselsnummer(),7);
-        assertEquals(laerer.getManadslonn(),1000);
-        assertEquals(laerer.getKontonummer(),7676);
+        assertEquals(laerer.getEtternavn(),"Mjaanes");
+        assertEquals(laerer.getFornavn(),"Jan");
+        assertEquals(laerer.getFoedselsnummer(),1010011700);
+        assertEquals(laerer.getManadslonn(),35000);
+        assertEquals(laerer.getKontonummer(),370540);
     }
 
     @Test
     public void testToString() {
         Laerer laerer = new Laerer(35000,370540,"Mjaanes", "Jan",1010011700);
 
-        String str = "LAERER\n7\nOlsen\nOle\n1000\n7676\n";
+        String str = "LAERER\n1010011700\nMjaanes\nJan\n35000\n370540\n";
 
         assertEquals(laerer.toString(),str);
     }

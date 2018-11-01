@@ -29,8 +29,8 @@ public class TestSamling {
         PersonSamling samling = new PersonSamling(40);
 
         Student student1 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
-        Student student2 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
-        Student student3 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
+        Student student2 = new Student(135039, "INF-B", "Midttun", "Espen",1010011800);
+        Student student3 = new Student(263023, "DAT-B","Eitungjerde", "Sara",1010011500);
 
         Person[] tabell = samling.getSamling();
 
@@ -53,8 +53,8 @@ public class TestSamling {
         PersonSamling samling = new PersonSamling(40);
 
         Student student1 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
-        Student student2 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
-        Student student3 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
+        Student student2 = new Student(135039, "INF-B", "Midttun", "Espen",1010011800);
+        Student student3 = new Student(263023, "DAT-B","Eitungjerde", "Sara",1010011500);
 
         Person[] tabell = samling.getSamling();
 
@@ -78,7 +78,6 @@ public class TestSamling {
         PersonSamling samling = new PersonSamling(2);
 
         Student student1 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
-
         Student student2 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
 
         Laerer laerer = new Laerer(35000,370540,"Mjaanes", "Jan",1010011700);
@@ -107,7 +106,7 @@ public class TestSamling {
 
         PersonSamling samling = new PersonSamling(2);
         Student student1 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
-        Student student2 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
+        Student student2 = new Student(135039, "INF-B", "Midttun", "Espen",1010011800);
 
         samling.leggTilUtvid(student1);
         samling.leggTilUtvid(student2);
@@ -127,7 +126,7 @@ public class TestSamling {
         PersonSamling samling = new PersonSamling(2);
 
         Student student1 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
-        Student student2 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
+        Student student2 = new Student(135039, "INF-B", "Midttun", "Espen",1010011800);
 
         Laerer laerer = new Laerer(35000,370540,"Mjaanes", "Jan",1010011700);
 
@@ -158,7 +157,7 @@ public class TestSamling {
         PersonSamling samling = new PersonSamling(2);
 
         Student student1 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
-        Student student2 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
+        Student student2 = new Student(135039, "INF-B", "Midttun", "Espen",1010011800);
 
         assertTrue(samling.ledigPlass());
 

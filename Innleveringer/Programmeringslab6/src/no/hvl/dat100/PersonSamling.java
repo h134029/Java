@@ -51,7 +51,7 @@ public class PersonSamling extends Person{
             temp = null;
 
         }
-        return sammePers;
+        return !sammePers;
     }
 
     // Metoder
@@ -95,7 +95,14 @@ public class PersonSamling extends Person{
         return indeks;
     }
     public boolean finnes(Person p) {
-        return erLik(p);
+        boolean fant = false;
+        long n = p.getFoedselsnummer();
+        int i = 0;
+        while (!fant && i < antall) {
+            fant = (samling[i++].foedselsnummer == n);
+        }
+        return fant;
+
     }
     public boolean ledigPlass() {
         boolean erLedig = false;

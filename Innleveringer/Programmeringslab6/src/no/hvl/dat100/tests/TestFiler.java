@@ -23,7 +23,7 @@ public class TestFiler {
         samling.leggTilUtvid(student);
         samling.leggTilUtvid(laerer);
 
-        filer.skriv(samling, FILNAVNSKRIVE);
+        Filer.skriv(samling, FILNAVNSKRIVE);
 
         try {
             assertTrue(compareFiles(FILNAVNSKRIVE,FILNAVNLESE));
@@ -37,7 +37,7 @@ public class TestFiler {
     public void testles() {
         Filer filer = new Filer();
 
-        PersonSamling samling = filer.les(FILNAVNLESE);
+        PersonSamling samling = Filer.les(FILNAVNLESE);
         Student student = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
         Laerer laerer = new Laerer(35000,370540,"Mjaanes", "Jan",1010011700);
 
@@ -46,7 +46,7 @@ public class TestFiler {
         assertTrue(samling.finnes(laerer));
     }
 
-    private static String MAPPE = System.getProperty("user.dir") + "/src/no/hvl/dat100/jpl9/";
+    private static String MAPPE = System.getProperty("user.dir") + "/src/no/hvl/dat100/";
 
     private boolean compareFiles(String f1, String f2) throws IOException {
 
