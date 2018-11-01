@@ -30,33 +30,34 @@
     <session id="865539667">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="dat" value="4" />
-          <entry key="java" value="15" />
-          <entry key="txt" value="4" />
+          <entry key="java" value="18" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="15" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="JAVA" value="18" />
+          <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4607" />
+          <entry key="java" value="5091" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4607" />
+          <entry key="JAVA" value="5091" />
         </counts>
       </usages-collector>
     </session>
@@ -97,12 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#997#998#0" expanded="true" />
-                <element signature="e#1077#1078#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="54">
+              <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -110,8 +107,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Laerer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            <state relative-caret-position="255">
+              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+              <folding>
+                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#875#876#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,19 +120,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/tests/TestSamling.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="92" column="52" lean-forward="true" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
+            <state relative-caret-position="-14">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#869#870#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,17 +133,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/PersonSamling.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+            <state relative-caret-position="238">
+              <caret line="130" column="18" lean-forward="true" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Filer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
+            <state relative-caret-position="1870">
+              <caret line="110" column="1" lean-forward="true" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,29 +151,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/personer.dat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/personerkorrekt.dat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="306">
+              <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -201,23 +176,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/no/hvl/dat100/tests/TPerson.java" />
-        <option value="$PROJECT_DIR$/src/no/hvl/dat100/Laerer.java" />
         <option value="$PROJECT_DIR$/src/no/hvl/dat100/tests/TestPerson.java" />
         <option value="$PROJECT_DIR$/src/no/hvl/dat100/tests/TestStudent.java" />
-        <option value="$PROJECT_DIR$/src/no/hvl/dat100/Student.java" />
         <option value="$PROJECT_DIR$/src/no/hvl/dat100/tests/TestFiler.java" />
         <option value="$PROJECT_DIR$/src/no/hvl/dat100/personerkorrekt.dat" />
-        <option value="$PROJECT_DIR$/src/no/hvl/dat100/Filer.java" />
         <option value="$PROJECT_DIR$/src/no/hvl/dat100/tests/TestLaerer.java" />
-        <option value="$PROJECT_DIR$/src/no/hvl/dat100/Test.java" />
         <option value="$PROJECT_DIR$/src/no/hvl/dat100/Person.java" />
         <option value="$PROJECT_DIR$/src/no/hvl/dat100/PersonSamling.java" />
         <option value="$PROJECT_DIR$/src/no/hvl/dat100/tests/TestSamling.java" />
+        <option value="$PROJECT_DIR$/src/no/hvl/dat100/Laerer.java" />
+        <option value="$PROJECT_DIR$/src/no/hvl/dat100/Student.java" />
+        <option value="$PROJECT_DIR$/src/no/hvl/dat100/Test.java" />
+        <option value="$PROJECT_DIR$/src/no/hvl/dat100/Filer.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-9" />
     <option name="width" value="1932" />
     <option name="height" value="1050" />
   </component>
@@ -246,7 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,6 +251,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,18 +277,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestSamling">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="no.hvl.dat100.Test" />
       <module name="Programmeringslab6" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestFiler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Programmeringslab6" />
-      <option name="PACKAGE_NAME" value="no.hvl.dat100.tests" />
-      <option name="MAIN_CLASS_NAME" value="no.hvl.dat100.tests.TestFiler" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -360,20 +327,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Programmeringslab6" />
+      <option name="PACKAGE_NAME" value="no.hvl.dat100.tests" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat100.tests.TestStudent" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Test" />
-      <item itemvalue="JUnit.TestFiler" />
       <item itemvalue="JUnit.TestLaerer" />
       <item itemvalue="JUnit.TestPerson" />
       <item itemvalue="JUnit.TestSamling" />
+      <item itemvalue="JUnit.TestStudent" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestSamling" />
         <item itemvalue="Application.Test" />
         <item itemvalue="JUnit.TestPerson" />
+        <item itemvalue="JUnit.TestStudent" />
+        <item itemvalue="JUnit.TestSamling" />
         <item itemvalue="JUnit.TestLaerer" />
-        <item itemvalue="JUnit.TestFiler" />
       </list>
     </recent_temporary>
   </component>
@@ -391,41 +366,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestPerson - 2018.11.01 at 04h 02m 16s.xml">
+    <history-entry file="TestSamling - 2018.11.01 at 13h 23m 48s.xml">
+      <configuration name="TestSamling" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSamling - 2018.11.01 at 13h 26m 39s.xml">
+      <configuration name="TestSamling" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSamling - 2018.11.01 at 13h 29m 15s.xml">
+      <configuration name="TestSamling" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSamling - 2018.11.01 at 13h 30m 05s.xml">
+      <configuration name="TestSamling" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSamling - 2018.11.01 at 13h 30m 44s.xml">
+      <configuration name="TestSamling" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSamling - 2018.11.01 at 13h 32m 47s.xml">
+      <configuration name="TestSamling" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSamling - 2018.11.01 at 13h 35m 01s.xml">
+      <configuration name="TestSamling" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSamling - 2018.11.01 at 13h 40m 34s.xml">
+      <configuration name="TestSamling" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStudent - 2018.11.01 at 13h 41m 04s.xml">
+      <configuration name="TestStudent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPerson - 2018.11.01 at 13h 41m 32s.xml">
       <configuration name="TestPerson" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestPerson - 2018.11.01 at 04h 05m 52s.xml">
-      <configuration name="TestPerson" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestPerson - 2018.11.01 at 04h 06m 32s.xml">
-      <configuration name="TestPerson" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestPerson - 2018.11.01 at 04h 07m 39s.xml">
-      <configuration name="TestPerson" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSamling - 2018.11.01 at 04h 07m 57s.xml">
-      <configuration name="TestSamling" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSamling - 2018.11.01 at 04h 11m 03s.xml">
-      <configuration name="TestSamling" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSamling - 2018.11.01 at 04h 14m 00s.xml">
-      <configuration name="TestSamling" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSamling - 2018.11.01 at 04h 15m 44s.xml">
-      <configuration name="TestSamling" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSamling - 2018.11.01 at 04h 20m 11s.xml">
-      <configuration name="TestSamling" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSamling - 2018.11.01 at 04h 22m 21s.xml">
-      <configuration name="TestSamling" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25426438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16931638" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -434,14 +409,14 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30477223" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30427048" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3286334" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32740214" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -457,68 +432,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/tests/TPerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#125#126#0" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/tests/TestStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" column="63" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/personer.txt" />
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Laerer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Filer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/personerkorrekt.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/personer.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/tests/TestLaerer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -556,45 +470,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/PersonSamling.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#997#998#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="130" column="18" lean-forward="true" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/tests/TestSamling.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="92" column="52" lean-forward="true" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
+        <state relative-caret-position="278">
+          <caret line="210" column="45" lean-forward="true" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/tests/TestStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="41" column="63" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/tests/TPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Laerer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/minePersoner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/personer.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/personerkorrekt.dat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="80" />
+        <state relative-caret-position="306">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Filer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="110" column="1" lean-forward="true" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -94,10 +94,8 @@ public class Filer extends Person{
                     i++;
                     PS.setAntall(i);
                 }
-
             }
             sc.close();
-
 
         }catch(NoSuchElementException e) {
             System.out.println();
@@ -108,7 +106,6 @@ public class Filer extends Person{
         }catch(NullPointerException e) {
             System.out.println(e);
         }
-
         return PS;
     }
 }

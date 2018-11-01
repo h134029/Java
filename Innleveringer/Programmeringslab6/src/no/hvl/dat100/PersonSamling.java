@@ -19,41 +19,49 @@ public class PersonSamling extends Person{
 
     public void setAntall(int antall) { this.antall = antall; }
 
+    public Person[] utvid() {
+        Person[] temp = new Person[samling.length * 2];
+        // Kopierer samling
+        for (int i = 0; i < antall;i++) {
+            temp[i] = samling[i];
+        }
+
+        // Ny Samling, fører inn frå temp
+        samling = new Person[temp.length];
+        for (int i = 0; i < antall; i++) {
+            samling[i] = temp[i];
+        }
+        return samling;
+    }
     // Legg til og utvid slått sammen
     public boolean leggTilUtvid(Person p) {
         // True/False om vi legger han inn (erLik == False)
-        boolean sammePers = false;
-        int j = 0;
-        while (!sammePers && j < antall) {
-            sammePers = (samling[j++].erLik(p));
-        }
+        boolean sammePers = finnes(p);
+
         if (antall < samling.length && !sammePers) {
             samling[antall] = p;
             antall++;
-            p.index = antall;
 
-        // over startkapasitet, lager ny samling[startKapasitet*2]
+        // over startkapasitet, lager ny samling[startKapasitet*2] med utvid()
         } else if (antall >= samling.length && !sammePers){
-            Person[] temp = new Person[samling.length * 2];
-            // Kopierer samling
-            for (int i = 0; i < antall;i++) {
-                temp[i] = samling[i];
-            }
+            samling = utvid();
             // Siste Person det ikkje var plass til
-            temp[antall] = p;
-            p.index = antall;
+            samling[antall] = p;
             antall++;
-            // Ny Samling, fører inn frå temp
-            samling = new Person[temp.length];
-            for (int i = 0; i < antall; i++) {
-                samling[i] = temp[i];
-            }
-            temp = null;
-
         }
         return !sammePers;
     }
-
+    public boolean leggTil(Person p) {
+        boolean lagtTil = false;
+        if (antall < samling.length) {
+            samling[antall] = p;
+            antall++;
+            lagtTil = true;
+        } else {
+            System.out.println("Tabellen er full");
+        }
+        return lagtTil;
+    }
     // Metoder
     public void skrivut() {
         for (int i = 0; i < antall; i++) {
@@ -124,16 +132,13 @@ public class PersonSamling extends Person{
     }
     public boolean slett(Person p) {
         boolean slettet = false;
-        int j = p.getIndex();
-        try {
+        int j = finnPerson(p);
+        if (j >= 0) {
             samling[j] = null;
-            samling[j] = samling[antall-1];
-            samling[antall-1] = null;
-            samling[j].setIndex(j);
+            samling[j] = samling[antall - 1];
+            samling[antall - 1] = null;
             slettet = true;
-
-        } catch (Exception e){
-            System.out.println("Person ikkje funnet");
+            antall--;
         }
         return slettet;
     }

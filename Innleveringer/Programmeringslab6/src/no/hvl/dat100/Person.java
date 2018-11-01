@@ -4,7 +4,6 @@ public class Person {
     protected String etternavn;
     protected String fornavn;
     protected long foedselsnummer;
-    protected int index;
 
     public Person(String etternavn, String fornavn, long foedselsnummer) {
         this.etternavn = etternavn;
@@ -19,12 +18,10 @@ public class Person {
     public String getEtternavn() { return etternavn; }
     public String getFornavn() { return fornavn; }
     public long getFoedselsnummer() { return foedselsnummer; }
-    public int getIndex() { return index; }
 
     public void setEtternavn(String etternavn) { this.etternavn = etternavn; }
     public void setFornavn(String fornavn) { this.fornavn = fornavn; }
     public void setFoedselsnummer(long foedselsnummer) { this.foedselsnummer = foedselsnummer; }
-    public void setIndex(int index) { this.index = index; }
 
     // Metoder
     public String toString() {

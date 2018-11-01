@@ -78,19 +78,19 @@ public class TestSamling {
         PersonSamling samling = new PersonSamling(2);
 
         Student student1 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
-        Student student2 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
+        Student student2 = new Student(135039, "INF-B", "Midttun", "Espen",1010011800);
 
         Laerer laerer = new Laerer(35000,370540,"Mjaanes", "Jan",1010011700);
 
-        assertTrue(samling.leggTilUtvid(student1));
-        assertTrue(samling.leggTilUtvid(laerer));
+        assertTrue(samling.leggTil(student1));
+        assertTrue(samling.leggTil(laerer));
 
         assertEquals(2,samling.getAntall());
 
         assertTrue(samling.finnes(student1));
         assertTrue(samling.finnes(laerer));
 
-        assertFalse(samling.leggTilUtvid(student2));
+        assertFalse(samling.leggTil(student2));
 
         assertEquals(2,samling.getAntall());
 
@@ -108,10 +108,10 @@ public class TestSamling {
         Student student1 = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
         Student student2 = new Student(135039, "INF-B", "Midttun", "Espen",1010011800);
 
-        samling.leggTilUtvid(student1);
-        samling.leggTilUtvid(student2);
+        samling.leggTil(student1);
+        samling.leggTil(student2);
 
-        //samling.utvid();
+        samling.utvid();
 
         assertEquals(2,samling.getAntall());
         assertTrue(samling.finnes(student1));
@@ -181,8 +181,8 @@ public class TestSamling {
         Student student = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
         Laerer laerer = new Laerer(35000,370540,"Mjaanes", "Jan",1010011700);
 
-        samling.leggTilUtvid(student);
-        samling.leggTilUtvid(laerer);
+        samling.leggTil(student);
+        samling.leggTil(laerer);
 
         assertEquals(samling.getAntall(),2);
         assertTrue(samling.finnes(student));
@@ -202,11 +202,11 @@ public class TestSamling {
         Student student = new Student(134029,"DAT-B", "Fortun", "Olav",1010011900);
         Laerer laerer = new Laerer(35000,370540,"Mjaanes", "Jan",1010011700);
 
-        samling.leggTilUtvid(student);
-        samling.leggTilUtvid(laerer);
+        samling.leggTil(student);
+        samling.leggTil(laerer);
 
-        String str = "2\n" + "STUDENT\n6\nOlsen\nOle\n100\n1A\n" +
-                "LAERER\n8\nOlsen\nOle\n1000\n7676\n";
+        String str = "2\n" + "STUDENT\n1010011900\nFortun\nOlav\n134029\nDAT-B\n" +
+                "LAERER\n1010011700\nMjaanes\nJan\n35000\n370540\n";
 
         assertEquals(samling.toString(),str);
 

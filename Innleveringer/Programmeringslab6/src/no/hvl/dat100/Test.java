@@ -14,11 +14,6 @@ public class Test {
         Person P9 = new Student(443322, "OKADM", "Moe", "Mathias",1010011100);
         Person P10 = new Student(123987, "INF-A", "Hole", "Maria",1010011000);
 
-        Person[] tab = new Person[10];
-        tab[0] = new Student();
-        tab[1] = new Laerer(35000,370540,"Mjaanes", "Jan",1010011700);
-
-
 
         PersonSamling PS1 = new PersonSamling(5);
         PS1.leggTilUtvid(P1);
@@ -30,17 +25,11 @@ public class Test {
         PS1.leggTilUtvid(P7);
         PS1.leggTilUtvid(P8);
         PS1.leggTilUtvid(P9);
-        //PS1.leggTilUtvid(P10);
+        PS1.leggTilUtvid(P10);
 
-
-        System.out.println(PS1.finnes(P10));
-        System.out.println(P9.getFoedselsnummer());
-        System.out.println(P9.foedselsnummer);
-
-        //Filer.skriv(PS1,"personer.dat");
+        //Filer.skriv(PS1,"minePersoner.txt");
         PersonSamling test = Filer.les("personer.dat");
-
-        //test.skrivut();
+        System.out.print(test.toString());
 
 
 

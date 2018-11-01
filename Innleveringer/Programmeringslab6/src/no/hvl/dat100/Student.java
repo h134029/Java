@@ -19,6 +19,6 @@ public class Student extends Person {
 
     // Returnerer all object informasjon som String
     public String toString() {
-        return "STUDENT" + "\n" + super.toString() +  "\n" + studentnummer + "\n" + klasse + "\n";
+        return "STUDENT" + "\n" + super.toString() + studentnummer + "\n" + klasse + "\n";
     }
 }

@@ -19,6 +19,6 @@ public class Laerer extends Person {
 
     // Returnerer all object informasjon som String
     public String toString() {
-        return "LAERER" + "\n" + super.toString() + "\n" + manadslonn + "\n" + kontonummer + "\n";
+        return "LAERER" + "\n" + super.toString() + manadslonn + "\n" + kontonummer + "\n";
     }
 }
