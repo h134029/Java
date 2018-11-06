@@ -1,0 +1,30 @@
+public class Login {
+
+    private boolean[][] monster = { {true,false,false},
+                                    {true,true,true},
+                                    {false,false,true} };
+    public boolean erMed(int r, int k) {
+        return monster[r][k];
+    }
+    public void skrivUt() {
+        for (int j = 0; j < monster.length; j++) {
+            for (int i = 0; i < monster[j].length; i++) {
+                String ut = (monster[j][i]) ? "*" : " ";
+                System.out.print(ut);
+            }
+            System.out.println();
+        }
+    }
+    public boolean sjekkMonster(boolean[][] mnstr) {
+        boolean lik = true;
+
+        while (lik && j < monster.length) {
+            for (int j = 0; j < monster.length; j++) {
+                for (int i = 0; i < monster[j].length; i++) {
+                    lik = monster[j][i];
+                }
+            }
+        }
+        return lik;
+    }
+}

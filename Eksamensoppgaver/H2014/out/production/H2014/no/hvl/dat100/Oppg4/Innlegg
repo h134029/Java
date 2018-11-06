@@ -8,6 +8,7 @@ public class Innlegg {
         this("","");
         this.likes = 0;
     }
+
     public Innlegg(String bruker, String dato) {
         this.bruker = bruker;
         this.dato = dato;
@@ -31,7 +32,7 @@ public class Innlegg {
     // Metoder
 
     public void skrivUt() {
-        System.out.println("Bruker: " + bruker + ", Dato: " + dato + ", Antall likes: " + likes);
+        System.out.print("Bruker: " + bruker + ", Dato: " + dato + ", Antall likes: " + likes);
     }
     public void atLike() {
         this.likes += 1;

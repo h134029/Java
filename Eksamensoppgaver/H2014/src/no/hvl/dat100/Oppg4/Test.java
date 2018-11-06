@@ -7,6 +7,7 @@ public class Test {
 
         Post1.skrivUt();
         System.out.println();
+        Post2.atLike();
         Post2.skrivUt();
     }
 }
