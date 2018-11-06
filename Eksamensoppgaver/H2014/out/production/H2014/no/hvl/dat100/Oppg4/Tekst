@@ -1,0 +1,14 @@
+public class Tekst extends Innlegg {
+
+    private String tekst;
+
+    public Tekst(String tekst) {
+        this.tekst = tekst;
+        super(bruker, dato, likes);
+    }
+
+    public void skrivUt() {
+        super.skrivUt;
+        System.out.print(", Tekst: " + tekst);
+    }
+}

@@ -1,0 +1,15 @@
+public class Bilde extends Innlegg {
+
+    private String url;
+
+    public Bilde(String url) {
+        this.url = url;
+        super(bruker, dato, likes);
+    }
+
+    public void skrivUt() {
+            super.skrivUt;
+            System.out.print(", url: " + url);
+    }
+
+}
