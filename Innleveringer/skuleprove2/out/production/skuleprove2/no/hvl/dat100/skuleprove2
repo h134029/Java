@@ -1,0 +1,183 @@
+Olav Fortun - h134029
+Oppgave 1
+// Printes ut:
+// a)
+19
+1
+3
+false
+true
+
+// b)
+klasserom
+ukjent
+
+// c)
+10101
+
+Oppgave 2
+// Printes ut:
+0 1
+-1
+x = 2
+
+
+Oppgave 3
+public class ToDoElement {
+    private String beskrivelse;
+    private int nummer;
+    private int prioritet;
+
+    public ToDoElement(String beskrivelse, int nummer, int prioritet) {
+        this.beskrivelse = beskrivelse;
+        this.nummer = nummer;
+        this.prioritet = prioritet;
+    }
+    // Get/Set
+    public String getBeskrivelse() {return beskrivelse;}
+    public int getNummer() {return nummer;}
+    public int getPrioritet() {return prioritet;}
+
+    public void setBeskrivelse(String beskrivelse) {
+        this.beskrivelse = beskrivelse;
+    }
+    public void setNummer(int nummer) {
+        this.nummer = nummer;
+    }
+    public void setPrioritet(int prioritet) {
+        this.prioritet = prioritet;
+    }
+    // Metode
+        public String toString() {
+        String ut = beskrivelse + "\n" + String.format("%-10s", "Nummer") + ": " + nummer + "\n" + String.format("%-10s", "Prioritet") + ": " + prioritet;
+        return ut;
+
+    }
+}
+
+public class ToDoListe {
+    private ToDoElement[] todoTab;
+    private int antall;
+
+    public ToDoListe(int maksAntall) {
+    todoTab = new ToDoElement[maksAntall];
+    antall = 0;
+    }
+    public void leggTil(ToDoElement tde) {
+
+        if (antall < todoTab.length) {
+            todoTab[antall] = tde;
+            antall++;
+        } else {
+            System.out.println("TODO Tabellen er full");
+        }
+    }
+    public ToDoElement finnViktig() {
+
+        int maks = 0;
+        try {
+            for (int i = 1; i < todoTab.length; i++) {
+                if (todoTab[i].getPrioritet() > todoTab[maks].getPrioritet()) {
+                    maks = i;
+                }
+            }
+        }catch(NullPointerException e) {
+            System.out.println();
+        }
+        return todoTab[maks];
+    }
+}
+public class Main {
+    public static void main(String[] args){
+
+        ToDoElement TD1 = new ToDoElement("Stå på eksamen", 1, 2);
+        ToDoElement TD2 = new ToDoElement("Lage middag", 2, 1);
+
+        ToDoListe TDL1 = new ToDoListe(10);
+        TDL1.leggTil(TD1);
+        TDL1.leggTil(TD2);
+
+        // toString() metoden i klassen blir automatisk printet ut
+        System.out.println(TDL1.finnViktig());
+    }
+}
+
+
+Oppgave 4
+public class Bestilling {
+
+  private int kontaktnummer;
+  private String kundenavn;
+  private String adresse;
+
+  public Bestilling(int kontaktnummer, String kundenavn, String adresse) {
+    this.kontaktnummer = kontaktnummer;
+    this.kundenavn = kundenavn;
+    this.adresse = adresse;
+  }
+  public Bestilling() {
+    this(0,"","");
+  }
+
+  // Get/Set
+  public int getKontaktnummer() {return kontaktnummer;}
+  public String getKundenavn() {return kundenavn;}
+  public String getAdresse() {return adresse;}
+
+  public void setKontaktnummer(int kontaktnummer) {
+    this.kontaktnummer = kontaktnummer;
+  }
+  public void setKundenavn(String kundenavn) {
+    this.kundenavn = kundenavn;
+  }
+  public void setAdresse(String adresse) {
+    this.adresse = adresse;
+  }
+  // Metoder
+  // Skriver ut alt på ein linje
+  public void skrivUt() {
+    System.out.print("Kontaktnummer: " + kontaktnummer + ", Kundenavn: " + kundenavn + ",               Adresse: " + adresse);
+  }
+}
+public class SnarestMulig extends Bestilling {
+
+  private int maxtid;
+  
+  public SnarestMulig(int kontaktnummer, String kundenavn, String adresse, int maxtid) {
+    super(kontaktnummer, kundenavn, adresse);
+    this.maxtid = maxtid;
+  }
+  // Skriver ut alt på ein linje
+  public void skrivUt() {
+    super.skrivUt();
+    System.out.print(", Maxtid: " + makstid);
+  }
+}
+public class Tidspunkt extends Bestilling {
+
+  private String dato;
+  private String tidspunkt;
+
+  public Tidspunkt(int kontaktnummer, String kundenavn, String adresse, String dato, String             tidspunkt) {
+    super(kontaktnummer, kundenavn, adresse);
+    this.dato = dato;
+    this.tidspunkt = tidspunkt;
+  }
+  // Skriver ut alt på ein linje
+  public void skrivUt() {
+    super.skrivUt();
+    System.out.print(", Dato: " + dato + ", Tidspunkt: " + tidspunkt);
+  }
+}
+public class Main {
+
+  public static void main(String[] args) {
+    
+    Bestilling B1 = new SnarestMulig(12345, "Olav", "Bjørneveien 1", 300);
+    Bestilling B2 = new Tidspunkt(54321, "Bjørn", "Olaveien 2", "07.11", "20:00");
+
+    B1.skrivUt();
+    System.out.println();
+    B2.skrivUt();
+  }
+}
