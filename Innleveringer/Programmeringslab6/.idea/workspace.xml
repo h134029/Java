@@ -2,22 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d62424fc-3dfa-4da2-81a1-513f98f51b06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programmeringslab6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Programmeringslab6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/Filer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/Filer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/personer.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/personer.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/tests/TestFiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/tests/TestFiler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat100/Filer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat100/Filer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat100/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat100/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat100/PersonSamling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat100/PersonSamling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat100/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat100/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat100/personer.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat100/personer.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat100/personerkorrekt.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat100/personerkorrekt.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat100/tests/TestFiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat100/tests/TestFiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat100/tests/TestLaerer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat100/tests/TestLaerer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat100/tests/TestSamling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat100/tests/TestSamling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/Filer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/Laerer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/PersonSamling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/tests/TPerson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/tests/TestFiler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/tests/TestLaerer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/tests/TestPerson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/tests/TestSamling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmeringslab6/no/hvl/dat100/tests/TestStudent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../skuleprøve1/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../skuleprøve1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../skuleprøve1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../skuleprøve1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../skuleprøve1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../skuleprøve1/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../skuleprøve1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../skuleprøve1/h134029_Skuleprøve1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../skuleprøve1/out/production/skuleprøve1/no/hvl/dat100/Epost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../skuleprøve1/out/production/skuleprøve1/no/hvl/dat100/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../skuleprøve1/skuleprøve1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../skuleprøve1/src/no/hvl/dat100/Epost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../skuleprøve1/src/no/hvl/dat100/Main.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,9 +75,10 @@
     <session id="-1353229276">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -99,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+            <state relative-caret-position="272">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -108,12 +119,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Laerer.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="391">
               <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding>
                 <element signature="e#777#778#0" expanded="true" />
                 <element signature="e#875#876#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="357">
+              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+>>>>>>> 8f6955e8e210fac56e924f8fd83e95a4627c5b81
             </state>
           </provider>
         </entry>
@@ -121,12 +137,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Student.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="408">
               <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#771#772#0" expanded="true" />
                 <element signature="e#868#869#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+>>>>>>> 8f6955e8e210fac56e924f8fd83e95a4627c5b81
             </state>
           </provider>
         </entry>
@@ -134,8 +155,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/PersonSamling.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="221">
               <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+=======
+            <state relative-caret-position="2312">
+              <caret line="138" column="18" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
+>>>>>>> 8f6955e8e210fac56e924f8fd83e95a4627c5b81
             </state>
           </provider>
         </entry>
@@ -143,8 +169,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Filer.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-1139">
               <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+=======
+            <state relative-caret-position="1819">
+              <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+>>>>>>> 8f6955e8e210fac56e924f8fd83e95a4627c5b81
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,8 +186,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Test.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="296">
               <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+=======
+            <state relative-caret-position="442">
+              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+>>>>>>> 8f6955e8e210fac56e924f8fd83e95a4627c5b81
             </state>
           </provider>
         </entry>
@@ -399,9 +435,14 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16931638" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17110874" />
+>>>>>>> 8f6955e8e210fac56e924f8fd83e95a4627c5b81
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -438,9 +479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="46" column="44" lean-forward="true" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -465,9 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="83" column="56" lean-forward="true" selection-start-line="83" selection-start-column="56" selection-end-line="83" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -475,9 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="210" column="45" lean-forward="true" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -485,9 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="41" column="63" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -498,13 +527,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/minePersoner.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/minePersoner.txt" />
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/personer.dat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -518,19 +541,24 @@
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        <state relative-caret-position="272">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Laerer.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="391">
           <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
             <element signature="e#777#778#0" expanded="true" />
             <element signature="e#875#876#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="357">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+>>>>>>> 8f6955e8e210fac56e924f8fd83e95a4627c5b81
         </state>
       </provider>
     </entry>
@@ -547,25 +575,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Filer.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-1139">
           <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="2312">
+          <caret line="138" column="18" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
+>>>>>>> 8f6955e8e210fac56e924f8fd83e95a4627c5b81
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/PersonSamling.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="221">
           <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+=======
+        <state relative-caret-position="442">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+>>>>>>> 8f6955e8e210fac56e924f8fd83e95a4627c5b81
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat100/Test.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="296">
           <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+=======
+        <state relative-caret-position="1819">
+          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 8f6955e8e210fac56e924f8fd83e95a4627c5b81
         </state>
       </provider>
     </entry>
