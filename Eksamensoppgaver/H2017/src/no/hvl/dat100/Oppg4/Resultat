@@ -1,0 +1,17 @@
+public abstract class Resultat {
+	private String navn;
+	private char kjonn;
+
+	public Resultat(String navn, char kjonn) {
+		this.navn = navn;
+		this.kjonn = kjonn;
+	}
+	//GET/SET
+	public String getNavn() {return navn;}
+	public char getKjonn() {return kjonn;}
+
+	public void setNavn() {this.navn = navn;}
+	public void setKjonn() {this.kjonn = kjonn;}
+
+	public abstract int poeng();
+}

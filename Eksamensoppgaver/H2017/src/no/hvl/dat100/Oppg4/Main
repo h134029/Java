@@ -1,0 +1,15 @@
+public class Main {
+	public static void main(String[] args) {
+		Resultat[] rtab = new Resultat[10];
+		rtab[0] = new Spyd("Olav", 'M', 82.34);
+		rtab[1] = new HundreMeter("Espen", 'K', 9.10);
+
+		Resultat best = rtab[0];
+		for (Resultat r: rtab) {
+			if (r.poeng() > best.poeng()) {
+				best = r;
+			}
+		}
+		System.out.println("Beste resultat: " + best.toString());
+	}
+}

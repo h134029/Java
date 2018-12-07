@@ -1,0 +1,25 @@
+public class HundreMeter extends Resultat {
+	private double tid;
+
+	public HundreMeter(String navn, char kjonn, double tid) {
+		super(navn, kjonn);
+		this.tid = tid;
+	}
+	public int poeng() {
+		int base = 1000;
+		int score = 0;
+		double base_m = 10.40;
+		double base_k = 11.60;
+
+		switch (getKjonn()) {
+			case 'M':
+				score = base + Integer.parseInt((tid - base_m)*240);
+				break;
+			case 'K':
+				score = base + Integer.parseInt((tid - base_k)*240);
+				break;
+			default:
+				score = 0;
+		}
+	}
+}

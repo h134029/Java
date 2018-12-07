@@ -1,0 +1,15 @@
+public class Main {
+	public static void smartPanel(ISensor sensor, VarmePanel panel, double grense) {
+
+		while(true) {
+			double temp = sensor.leseav();
+
+			if (temp > grense) {
+				panel.off();
+			} else {
+				panel.on();
+			}
+			vent(60);
+		}
+	}
+}

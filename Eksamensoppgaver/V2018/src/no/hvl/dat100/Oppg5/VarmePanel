@@ -1,0 +1,22 @@
+public class VarmePanel implements IKontrol {
+	private boolean status;
+	private IAktuator aktuator;
+
+	public Varmepanel(IAktuator aktuator) {
+		this.status = false;
+		this.aktuator = aktuator;
+	}
+	public void on() {
+		if (!status) {
+			status = true;
+			aktuator.aktiver();
+		}
+	}
+	public void off() {
+		if (status) {
+			status = false;
+			aktuator.deaktiver();
+		}
+	}
+	public boolean getStatus() {return status;}
+}
