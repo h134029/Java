@@ -1,0 +1,25 @@
+public class Spyd extends Resultat {
+	private double lengde;
+
+	public Spyd(String navn, char kjonn, double lengde) {
+		super(navn, kjonn);
+		this.lengde = lengde;
+	}
+	public int poeng() {
+		int base = 1000;
+		int score = 0;
+		double base_m = 77.20;
+		double base_k = 60.00;
+
+		switch (getKjonn()) {
+			case 'M':
+				score = base + Integer.parseInt((lengde - base_m)*15);
+				break;
+			case 'K':
+				score = base + Integer.parseInt((lengde - base_k)*15)
+				break;
+			default:
+				score = 0;
+		}
+	}
+}
