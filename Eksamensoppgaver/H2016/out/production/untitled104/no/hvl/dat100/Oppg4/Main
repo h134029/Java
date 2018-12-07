@@ -1,0 +1,11 @@
+public class Main {
+	public static void main(String[] args) {
+
+		Venteliste V = new Venteliste(10);
+		Pasient P1 = new Pasient("Olav", 12345);
+		V.oppdaterDager(10);
+		Pasient P2 = new Pasient("Espen", 23456);
+
+		V.skrivUt();
+	}
+}
