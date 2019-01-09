@@ -26,21 +26,25 @@ public class Meny extends JFrame{
 
     public Meny() {
         super("The title bar");
-        setLayout(new FlowLayout());
+        setLayout(null);
 
-        item1 = new JTextField(10);
-        item1.setToolTipText("Legg til butikk");
+        item1 = new JTextField();
+        item1.setBounds(50,50,100,20);
         add(item1);
 
-        item2 = new JTextField(10);
+        item2 = new JTextField();
+        item2.setBounds(200,50,100,20);
         add(item2);
 
-        item3 = new JTextField(10);
+        item3 = new JTextField();
+        item3.setBounds(200,100,100,20);
         add(item3);
 
         JB1 = new JButton("Legg til butikk");
+        JB1.setBounds(350,50,150,20);
         add(JB1);
         JB2 = new JButton("Legg til varer");
+        JB2.setBounds(350,100,150,20);
         add(JB2);
 
         theHandler handler = new theHandler();
@@ -56,28 +60,31 @@ public class Meny extends JFrame{
 
     private class theHandler implements ActionListener {
 
+        Butikk[] btab = new Butikk[50];
+
         public void actionPerformed(ActionEvent event) {
 
-            String string = "";
-            Butikk B = new Butikk();
 
-            if (event.getSource() == item1) {
-                B = new Butikk(item1.getText(), Integer.parseInt(item2.getText()));
+            if (event.getSource() == JB1) {
+                int i = 0;
+                btab[i] = new Butikk(item1.getText(), Integer.parseInt(item2.getText()));
                 System.out.println("Butikk lagt inn: " + item1.getText());
-            }
-            else if (event.getSource() == JB2 && event.getSource() == item3) {
-                B.leggInnNyVare(Integer.parseInt(item3.getText()));
+                i++;
 
             }
+            if (event.getSource() == JB2) {
+                btab[0].leggInnNyVare(Integer.parseInt(item3.getText()));
+
+            }
+            btab[0].salgsVerdi();
         }
     }
-
 
 
     public static void main(String[] args) {
         Meny test = new Meny();
         test.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        test.setSize(500,500);
+        test.setSize(600,500);
         test.setVisible(true);
     }
 }
