@@ -70,6 +70,7 @@ public class CDarkiv implements CDarkivADT {
             System.out.println("Error, feil CD nummer");
             return false;
         }else {
+            // Slett og trim null verdier bakerst
             cdTabell[(cdIndex(cdNr))] = cdTabell[antall-1];
             cdTabell[antall-1] = null;
             antall--;
@@ -129,4 +130,5 @@ public class CDarkiv implements CDarkivADT {
     public void setAntall(int antall) {
         this.antall = antall;
     }
+
 }

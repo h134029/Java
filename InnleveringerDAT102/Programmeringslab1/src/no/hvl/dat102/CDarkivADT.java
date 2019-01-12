@@ -1,6 +1,6 @@
 package no.hvl.dat102;
 
-public interface CDarkivADT<T> {
+public interface CDarkivADT {
 
     /**
      * Returnere en tabell av CD-er
