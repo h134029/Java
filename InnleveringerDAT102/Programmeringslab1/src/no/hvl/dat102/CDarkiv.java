@@ -1,5 +1,8 @@
 package no.hvl.dat102;
 
+import no.hvl.dat102.ADT.CDarkivADT;
+
+
 public class CDarkiv implements CDarkivADT {
 
     private CD[] cdTabell;
@@ -117,8 +120,8 @@ public class CDarkiv implements CDarkivADT {
     public int antallSjanger(Sjanger sjanger) {
         int teller = 0;
 
-        for (CD cd: cdTabell) {
-            teller += (cd.getSjanger() == sjanger) ? 1 : 0;
+        for (int i = 0; i < antall; i++) {
+            teller += (cdTabell[i].getSjanger() == sjanger) ? 1 : 0;
         }
         return teller;
     }

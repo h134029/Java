@@ -1,5 +1,7 @@
 package no.hvl.dat102;
 
+import no.hvl.dat102.ADT.CDarkivADT;
+
 public class Tekstgrensesnitt {
 
     public CD lesCD(){
@@ -36,8 +38,8 @@ public class Tekstgrensesnitt {
         System.out.println("Antall Sjanger - KLASSISK: " + cda.antallSjanger(Sjanger.klassisk));
         System.out.println();
         System.out.println("CDNR#ARTIST#TITTEL#RELEASE#LABEL#SJANGER");
-        for (CD c: hold) {
-            System.out.println(c.toString());
+        for (int i = 0; i < cda.antall(); i++) {
+            System.out.println(cda.hentCdTabell()[i].toString());
         }
         System.out.println();
 

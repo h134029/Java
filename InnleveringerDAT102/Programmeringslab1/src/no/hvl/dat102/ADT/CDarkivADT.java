@@ -1,4 +1,7 @@
-package no.hvl.dat102;
+package no.hvl.dat102.ADT;
+
+import no.hvl.dat102.CD;
+import no.hvl.dat102.Sjanger;
 
 public interface CDarkivADT {
 

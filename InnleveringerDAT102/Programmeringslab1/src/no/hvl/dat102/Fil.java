@@ -1,5 +1,7 @@
 package no.hvl.dat102;
 
+import no.hvl.dat102.ADT.CDarkivADT;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -57,7 +59,7 @@ public class Fil {
         try {
 
             // Definerer et FileWriter-objekt som åpner filen
-			FileWriter ansFil = new FileWriter(filnavn, false);
+			FileWriter ansFil = new FileWriter(CDdir + filnavn, false);
             // Definerer et PrintWriter-objekt som kobles til FileWriter-objektet
 			PrintWriter utfil = new PrintWriter(ansFil);
 
