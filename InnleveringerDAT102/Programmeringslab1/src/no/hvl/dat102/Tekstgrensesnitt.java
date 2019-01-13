@@ -2,34 +2,58 @@ package no.hvl.dat102;
 
 import no.hvl.dat102.ADT.CDarkivADT;
 
+import javax.swing.*;
+
 public class Tekstgrensesnitt {
 
     public CD lesCD(){
-        return null;
+
+        int cdnr = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn CD nummer: "));
+        String artist = JOptionPane.showInputDialog("Skriv inn Artist: ");
+        String tittel = JOptionPane.showInputDialog("Skriv inn Tittel: ");
+        int release = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn Release år "));
+        String plateskp = JOptionPane.showInputDialog("Skriv inn Plateselskap: ");
+        Sjanger sjanger = null;
+
+        Sjanger[] options = {Sjanger.rock, Sjanger.pop, Sjanger.klassisk, Sjanger.opera};
+        int x = JOptionPane.showOptionDialog(null, "Velg Sjanger",
+                "Klikk!",
+                JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE, null, options, options);
+
+        if (x == 0) sjanger = Sjanger.rock;
+        else if (x == 1) sjanger = Sjanger.pop;
+        else if (x == 2) sjanger = Sjanger.klassisk;
+        else if (x == 3) sjanger = Sjanger.klassisk;
+
+        CD c = new CD(cdnr,artist,tittel,release,plateskp,sjanger);
+
+        return c;
     }
 
     public void visCD(CD cd){
         System.out.println(cd.toString());
+        System.out.println();
     }
 
-    public void skrivUtCdDelstrengITittel(CDarkivADT cda, String delstreng){
+    public void skrivUtCdDelstrengTittel(CDarkivADT cda, String delstreng){
         CD[] hold = cda.sokTittel(delstreng);
 
         for (CD cd:hold) {
             System.out.println(cd.toString());
         }
+        System.out.println();
     }
 
-    public void skrivUtCdArtist(CDarkivADT cda, String delstreng) {
+    public void skrivUtCdDelstrengArtist(CDarkivADT cda, String delstreng) {
         CD[] hold = cda.sokArtist(delstreng);
 
         for (CD cd:hold) {
             System.out.println(cd.toString());
         }
+        System.out.println();
     }
 
     public void skrivUtStatistikk(CDarkivADT cda){
-        CD[] hold = cda.hentCdTabell();
 
         System.out.println("Antall Sanger: " + cda.antall());
         System.out.println("Antall Sjanger - ROCK: " + cda.antallSjanger(Sjanger.rock));

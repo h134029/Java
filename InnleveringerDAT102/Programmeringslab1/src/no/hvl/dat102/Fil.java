@@ -78,9 +78,9 @@ public class Fil {
 				utfil.print(SKILLE);
 				utfil.print(tabell[i].getRelease());
 				utfil.print(SKILLE);
-                utfil.println(tabell[i].getPlateselskap());
+                utfil.print(tabell[i].getPlateselskap());
                 utfil.print(SKILLE);
-                utfil.print(tabell[i].getSjanger());
+                utfil.println(tabell[i].getSjanger());
 			}
 			// Lukk filen
 			utfil.close();
