@@ -150,7 +150,7 @@ public class Meny extends JFrame {
     public void start() {
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(500,500);
+        this.setSize(450,450);
 
     }
 }

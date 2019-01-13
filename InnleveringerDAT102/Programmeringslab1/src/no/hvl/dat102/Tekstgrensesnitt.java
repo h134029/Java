@@ -54,7 +54,7 @@ public class Tekstgrensesnitt {
 
     public void skrivUtStatistikk(CDarkivADT cda){
 
-        System.out.println("Antall Sanger: " + cda.antall());
+        System.out.println("Antall CDER " + cda.antall());
         System.out.println("Antall Sjanger - ROCK: " + cda.antallSjanger(Sjanger.rock));
         System.out.println("Antall Sjanger - POP: " + cda.antallSjanger(Sjanger.pop));
         System.out.println("Antall Sjanger - OPERA: " + cda.antallSjanger(Sjanger.opera));
@@ -65,6 +65,5 @@ public class Tekstgrensesnitt {
             System.out.println(cda.hentCdTabell()[i].toString());
         }
         System.out.println();
-
     }
 }
