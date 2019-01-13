@@ -2,7 +2,6 @@ package no.hvl.dat102;
 
 import no.hvl.dat102.ADT.CDarkivADT;
 
-
 public class CDarkiv implements CDarkivADT {
 
     private CD[] cdTabell;
@@ -74,9 +73,12 @@ public class CDarkiv implements CDarkivADT {
             return false;
         }else {
             // Slett og trim null verdier bakerst
+            System.out.println("Slettet CD: " + cdTabell[(cdIndex(cdNr))].toString());
+            System.out.println();
             cdTabell[(cdIndex(cdNr))] = cdTabell[antall-1];
             cdTabell[antall-1] = null;
             antall--;
+
             return true;
         }
     }

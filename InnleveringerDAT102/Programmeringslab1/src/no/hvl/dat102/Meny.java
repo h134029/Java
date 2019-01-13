@@ -1,22 +1,13 @@
 package no.hvl.dat102;
 
 import no.hvl.dat102.ADT.CDarkivADT;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.ActiveEvent;
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.JTextField;
-import javax.swing.JPasswordField;
 import javax.swing.JOptionPane;
-import java.awt.EventQueue;
-import java.awt.GridLayout;
-
-import static javax.swing.JOptionPane.showInputDialog;
 
 public class Meny extends JFrame {
 
@@ -32,6 +23,7 @@ public class Meny extends JFrame {
     private JButton lesFil;
     private JButton skrivInfo;
     private JButton nyCD;
+    private JButton slettCD;
     private JButton skrivFil;
     private JLabel info;
 
@@ -39,69 +31,68 @@ public class Meny extends JFrame {
     public Meny(CDarkivADT cda){
         super("Meny");
         setLayout(null);
-
+        theHandler handler = new theHandler();
         tekstgr = new Tekstgrensesnitt();
         this.cda = cda;
 
         filnavn = new JTextField();
         filnavn.setBounds(50,50,150,20);
-
-        lesFil = new JButton("Les av fil");
-        lesFil.setBounds(250,50,150,20);
+        add(filnavn);
+        filnavn.addActionListener(handler);
 
         filskriv = new JTextField();
         filskriv.setBounds(50,100,150,20);
+        add(filskriv);
+        filskriv.addActionListener(handler);
+
+        artistNavn = new JTextField();
+        artistNavn.setBounds(50,300,150,20);
+        add(artistNavn);
+        artistNavn.addActionListener(handler);
+
+        tittelNavn = new JTextField();
+        tittelNavn.setBounds(50,350,150,20);
+        add(tittelNavn);
+        tittelNavn.addActionListener(handler);
+
+        lesFil = new JButton("Les av fil");
+        lesFil.setBounds(250,50,150,20);
+        add(lesFil);
+        lesFil.addActionListener(handler);
 
         skrivFil = new JButton("Skriv til fil");
         skrivFil.setBounds(250,100,150,20);
+        add(skrivFil);
+        skrivFil.addActionListener(handler);
 
         nyCD = new JButton("Legg til ny CD");
         nyCD.setBounds(250,150,150,20);
+        add(nyCD);
+        nyCD.addActionListener(handler);
+
+        slettCD = new JButton("Slett CD");
+        slettCD.setBounds(250, 200, 150,20);
+        add(slettCD);
+        slettCD.addActionListener(handler);
 
         skrivInfo = new JButton("Skriv ut CD info");
-        skrivInfo.setBounds(250,200,150,20);
-
-        artistNavn = new JTextField();
-        artistNavn.setBounds(50,250,150,20);
+        skrivInfo.setBounds(250,250,150,20);
+        add(skrivInfo);
+        skrivInfo.addActionListener(handler);
 
         artistSok = new JButton("Søk etter Artist");
-        artistSok.setBounds(250,250,150,20);
-
-        tittelNavn = new JTextField();
-        tittelNavn.setBounds(50,300,150,20);
+        artistSok.setBounds(250,300,150,20);
+        add(artistSok);
+        artistSok.addActionListener(handler);
 
         tittelSok = new JButton("Søk etter Tittel");
-        tittelSok.setBounds(250,300,150,20);
+        tittelSok.setBounds(250,350,150,20);
+        add(tittelSok);
+        tittelSok.addActionListener(handler);
 
         info = new JLabel();
         info.setBounds(50,30,150,20);
-
-
-        add(filnavn);
-        add(filskriv);
         add(info);
-        add(lesFil);
-        add(skrivFil);
-        add(nyCD);
-        add(skrivInfo);
-        add(artistNavn);
-        add(artistSok);
-        add(tittelNavn);
-        add(tittelSok);
-
-
-        theHandler handler = new theHandler();
-
-        filnavn.addActionListener(handler);
-        filskriv.addActionListener(handler);
-        lesFil.addActionListener(handler);
-        skrivFil.addActionListener(handler);
-        nyCD.addActionListener(handler);
-        skrivInfo.addActionListener(handler);
-        artistSok.addActionListener(handler);
-        artistNavn.addActionListener(handler);
-        tittelSok.addActionListener(handler);
-        tittelNavn.addActionListener(handler);
 
         setVisible(true);
 
@@ -122,11 +113,14 @@ public class Meny extends JFrame {
             }
             // Add new CD
             else if (event.getSource() == nyCD) {
-
-                CD c = tekstgr.lesCD();
-                cda.leggTilCd(c);
-                System.out.print("CD Lagt til: ");
-                tekstgr.visCD(c);
+                try {
+                    CD c = tekstgr.lesCD();
+                    cda.leggTilCd(c);
+                    System.out.print("CD Lagt til: ");
+                    tekstgr.visCD(c);
+                }catch(NumberFormatException e) {
+                    System.out.println("Avbrutt CD Innlegg");
+                }
             }
             // Write File
             else if (event.getSource() == skrivFil) {
@@ -147,6 +141,9 @@ public class Meny extends JFrame {
                 System.out.println("Søk i Tittel: \"" + tittelNavn.getText() + "\"");
                 tekstgr.skrivUtCdDelstrengTittel(cda,tittelNavn.getText());
                 tittelNavn.setText(null);
+            }else if (event.getSource() == slettCD) {
+                int cdnr = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn CD nummer: "));
+                cda.slettCd(cdnr);
             }
         }
     }

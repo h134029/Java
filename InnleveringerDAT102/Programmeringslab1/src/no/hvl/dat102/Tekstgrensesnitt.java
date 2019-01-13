@@ -1,7 +1,6 @@
 package no.hvl.dat102;
 
 import no.hvl.dat102.ADT.CDarkivADT;
-
 import javax.swing.*;
 
 public class Tekstgrensesnitt {

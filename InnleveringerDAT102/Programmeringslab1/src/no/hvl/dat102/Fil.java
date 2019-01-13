@@ -1,7 +1,6 @@
 package no.hvl.dat102;
 
 import no.hvl.dat102.ADT.CDarkivADT;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
