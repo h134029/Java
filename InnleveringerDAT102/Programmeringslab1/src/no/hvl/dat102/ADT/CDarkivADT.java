@@ -18,7 +18,7 @@ public interface CDarkivADT {
     boolean leggTilCd(CD nyCd);
 
     /**
-     * Sletter ein CD frå arkivet
+     * Prompter bruker for CD nummer, sletter gitt CD frå arkivet
      * @param cdNr CD nummer
      * @return returnerer true/false om CD er slettet
      */

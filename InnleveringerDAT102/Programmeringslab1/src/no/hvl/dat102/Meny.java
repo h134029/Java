@@ -146,7 +146,7 @@ public class Meny extends JFrame {
                     int cdnr = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn CD nummer: "));
                     cda.slettCd(cdnr);
                 }catch (NumberFormatException e) {
-                    System.out.println("Avbrutt MENY");
+                    System.out.println("Avbrutt Sletting");
                     System.out.println();
                 }
             }
