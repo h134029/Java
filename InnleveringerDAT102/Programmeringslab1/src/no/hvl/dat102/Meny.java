@@ -142,8 +142,13 @@ public class Meny extends JFrame {
                 tekstgr.skrivUtCdDelstrengTittel(cda,tittelNavn.getText());
                 tittelNavn.setText(null);
             }else if (event.getSource() == slettCD) {
-                int cdnr = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn CD nummer: "));
-                cda.slettCd(cdnr);
+                try {
+                    int cdnr = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn CD nummer: "));
+                    cda.slettCd(cdnr);
+                }catch (NumberFormatException e) {
+                    System.out.println("Avbrutt MENY");
+                    System.out.println();
+                }
             }
         }
     }

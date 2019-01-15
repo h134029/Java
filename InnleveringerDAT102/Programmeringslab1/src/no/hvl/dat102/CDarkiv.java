@@ -52,7 +52,7 @@ public class CDarkiv implements CDarkivADT {
 
     public boolean leggTilCd(CD nyCd) {
         if (cdFinnes(nyCd.getCdnr())) {
-            // System.out.println("Error, duplikat CD nummer");
+            System.out.println("Error, duplikat CD nummer");
             return false;
         }
         else if (antall == cdTabell.length) {
@@ -71,14 +71,15 @@ public class CDarkiv implements CDarkivADT {
         if (!cdFinnes(cdNr)) {
             System.out.println("Error, feil CD nummer");
             return false;
-        }else {
+        }
+        else {
+
             // Slett og trim null verdier bakerst
             System.out.println("Slettet CD: " + cdTabell[(cdIndex(cdNr))].toString());
             System.out.println();
             cdTabell[(cdIndex(cdNr))] = cdTabell[antall-1];
             cdTabell[antall-1] = null;
             antall--;
-
             return true;
         }
     }
