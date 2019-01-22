@@ -1,11 +1,11 @@
 package no.hvl.dat102.TEST;
 
-import no.hvl.dat102.CD;
-import no.hvl.dat102.CDarkiv;
+import no.hvl.dat102.OPPG1_2.CD;
+import no.hvl.dat102.OPPG1_2.CDarkiv;
 
 import static org.junit.Assert.*;
 
-import no.hvl.dat102.Sjanger;
+import no.hvl.dat102.OPPG1_2.Sjanger;
 import org.junit.*;
 
 public class CDarkivTest {
