@@ -69,32 +69,67 @@ public class CDarkiv2Test {
         CD C1 = new CD(111, "Bon Jovi", "Always", 1995, "Mercury", Sjanger.rock);
         CD C2 = new CD(112, "Queen", "Bohemian Rhapsody", 1975, "Emi Records", Sjanger.rock);
         CD C3 = new CD(113, "Bruno Mars", "Wake Up in the Sky", 2018, "Atlantic", Sjanger.pop);
+        CD C4 = new CD(114, "Bon Jovi", "Livin' on a Prayer", 1995, "Mercury", Sjanger.rock);
+        CD C5 = new CD(115, "Queen", "Fat Bottomed Girl", 1975, "Emi Records", Sjanger.rock);
+        CD C6 = new CD(116, "Bruno Mars", "Uptown Funk", 2018, "Atlantic", Sjanger.pop);
+        CD C7 = new CD(117, "Bon Jovi", "You Give Love a Bad Name", 1995, "Mercury", Sjanger.rock);
+        CD C8 = new CD(118, "Queen", "Somebody to Love", 1975, "Emi Records", Sjanger.rock);
+        CD C9 = new CD(119, "Bruno Mars", "When I was your man", 2012, "Atlantic", Sjanger.pop);
+        CD C10 = new CD(120, "Bon Jovi", "It's My Life", 1995, "Mercury", Sjanger.rock);
 
         cdKjede.leggTilCd(C1);
         cdKjede.leggTilCd(C2);
         cdKjede.leggTilCd(C3);
+        cdKjede.leggTilCd(C4);
+        cdKjede.leggTilCd(C5);
+        cdKjede.leggTilCd(C6);
+        cdKjede.leggTilCd(C7);
+        cdKjede.leggTilCd(C8);
+        cdKjede.leggTilCd(C9);
+        cdKjede.leggTilCd(C10);
+
 
         CD[] tabell = cdKjede.hentCdTabell();
 
         // Pre delete
-        assertEquals(C1,tabell[2]);
-        assertEquals(C2,tabell[1]);
-        assertEquals(C3,tabell[0]);
-        assertEquals(3,cdKjede.antall());
+        assertEquals(C1,tabell[9]);
+        assertEquals(C2,tabell[8]);
+        assertEquals(C3,tabell[7]);
+        assertEquals(10,cdKjede.antall());
 
         assertEquals(cdKjede.finnCd(113).getNeste(),cdKjede.finnCd(112));
         assertEquals(cdKjede.finnCd(112).getNeste(),cdKjede.finnCd(111));
-        assertEquals(cdKjede.finnCd(111).getNeste(),null);
+        assertNull(cdKjede.finnCd(111).getNeste());
+
+        assertEquals(cdKjede.forrigeCd(113).getElement(),C4);
+        assertEquals(cdKjede.forrigeCd(112).getElement(),C3);
+        assertEquals(cdKjede.forrigeCd(111).getElement(),C2);
+
+        // Test forrige på første element i kjeden
+        assertEquals(cdKjede.forrigeCd(119).getElement(),C10);
+        assertEquals(cdKjede.forrigeCd(120).getElement(),C10);
 
         // Check delete
-        assertTrue(cdKjede.slettCd(C2.getCdnr()));
+        assertTrue(cdKjede.slettCd(C1.getCdnr()));
+        assertTrue(cdKjede.slettCd(C5.getCdnr()));
+        assertTrue(cdKjede.slettCd(C10.getCdnr()));
 
         // Post delete
-        assertEquals(cdKjede.finnCd(113).getNeste(),cdKjede.finnCd(111));
-        assertNotEquals(cdKjede.finnCd(113).getNeste(),cdKjede.finnCd(112));
-        assertEquals(2,cdKjede.antall());
+        //assertNull(cdKjede.finnCd(111).getNeste());
+        //assertNull(cdKjede.finnCd(115).getNeste());
+        //assertNull(cdKjede.finnCd(120).getNeste());
 
+        assertEquals(cdKjede.finnCd(113).getNeste(),cdKjede.finnCd(112));
+        assertEquals(cdKjede.finnCd(116).getNeste(),cdKjede.finnCd(114));
+        assertEquals(cdKjede.finnCd(119).getNeste(),cdKjede.finnCd(118));
 
+        assertEquals(cdKjede.forrigeCd(112).getElement(),C3);
+        assertEquals(cdKjede.forrigeCd(114).getElement(),C6);
+        assertEquals(cdKjede.forrigeCd(118).getElement(),C9);
+
+        assertEquals(cdKjede.forrigeCd(119).getElement(),C9);
+
+        assertEquals(7,cdKjede.antall());
 
     }
     @Test

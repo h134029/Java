@@ -51,7 +51,11 @@ public class CDarkiv2 implements CDarkivADT {
         LinearNode<CD> forrigeNode = null;
 
         for (int i = 0; i < antall && node != null; i++) {
-            if (node.getNeste().getElement().getCdnr() == cdNr) {
+            if (node.getNeste().getElement() != null && node.getNeste().getElement().getCdnr() == cdNr) {
+                forrigeNode = node;
+                break;
+            }
+            else if (node.getElement().getCdnr() == cdNr) {
                 forrigeNode = node;
                 break;
             }
@@ -64,10 +68,17 @@ public class CDarkiv2 implements CDarkivADT {
     public boolean slettCd(int cdNr) {
         LinearNode<CD> slett = finnCd(cdNr);
         LinearNode<CD> forrige = forrigeCd(cdNr);
+
         boolean slettet = false;
 
-        if (slett != null) {
+        if (slett != null && forrige != slett) {
             forrige.setNeste(slett.getNeste());
+            slett.setNeste(null);
+            antall--;
+            slettet = true;
+        }
+        else if (slett != null && forrige == slett) {
+            start = slett.getNeste();
             slett.setNeste(null);
             antall--;
             slettet = true;
