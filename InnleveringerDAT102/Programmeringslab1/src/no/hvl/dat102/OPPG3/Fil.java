@@ -1,6 +1,6 @@
 package no.hvl.dat102.OPPG3;
 
-import no.hvl.dat102.ADT.CDarkivADT;
+import no.hvl.dat102.OPPG3.ADT.CDarkivADT;
 import no.hvl.dat102.OPPG1_2.CD;
 import no.hvl.dat102.OPPG1_2.Sjanger;
 
@@ -9,7 +9,7 @@ import java.io.*;
 public class Fil {
 
     private static final String SKILLE = "#";
-    private static String CDdir = System.getProperty("user.dir") + "/src/no/hvl/dat102/SAMLINGER/";
+    private static String CDdir = System.getProperty("user.dir") + "/src/no/hvl/dat102/OPPG3/SAMLINGER/";
 
     public static CDarkivADT lesFraFil(String filnavn) {
         CDarkiv2 cda = new CDarkiv2();
@@ -48,7 +48,7 @@ public class Fil {
             System.out.println("Feil ved lesing av fil: " + e);
             System.exit(2);
         }
-
+        System.out.println();
         return cda;
     }
     public static void skrivTilFil(CDarkivADT cdarkiv, String filnavn)  {

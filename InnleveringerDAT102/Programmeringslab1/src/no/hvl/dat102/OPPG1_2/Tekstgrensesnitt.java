@@ -1,6 +1,6 @@
 package no.hvl.dat102.OPPG1_2;
 
-import no.hvl.dat102.ADT.CDarkivADT;
+import no.hvl.dat102.OPPG3.ADT.CDarkivADT;
 
 import javax.swing.*;
 
@@ -35,11 +35,11 @@ public class Tekstgrensesnitt {
         System.out.println();
     }
 
-    public void skrivUtCdDelstrengTittel(CDarkivADT cda, String delstreng){
+    public void skrivUtCdDelstrengTittel(CDarkivADT cda, String delstreng) {
         CD[] hold = cda.sokTittel(delstreng);
 
-        for (CD cd:hold) {
-            System.out.println(cd.toString());
+        for (int i = 0; i < hold.length && hold[i] != null; i++) {
+            System.out.println(hold[i].toString());
         }
         System.out.println();
     }
@@ -47,8 +47,8 @@ public class Tekstgrensesnitt {
     public void skrivUtCdDelstrengArtist(CDarkivADT cda, String delstreng) {
         CD[] hold = cda.sokArtist(delstreng);
 
-        for (CD cd:hold) {
-            System.out.println(cd.toString());
+        for (int i = 0; i < hold.length && hold[i] != null;i++) {
+            System.out.println(hold[i].toString());
         }
         System.out.println();
     }

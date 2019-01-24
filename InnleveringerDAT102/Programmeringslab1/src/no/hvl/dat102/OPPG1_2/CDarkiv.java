@@ -1,6 +1,6 @@
 package no.hvl.dat102.OPPG1_2;
 
-import no.hvl.dat102.ADT.CDarkivADT;
+import no.hvl.dat102.OPPG3.ADT.CDarkivADT;
 
 public class CDarkiv implements CDarkivADT {
 

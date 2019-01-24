@@ -1,6 +1,6 @@
 package no.hvl.dat102.OPPG1_2;
 
-import no.hvl.dat102.ADT.CDarkivADT;
+import no.hvl.dat102.OPPG3.ADT.CDarkivADT;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -117,8 +117,6 @@ public class Meny extends JFrame {
                 try {
                     CD c = tekstgr.lesCD();
                     cda.leggTilCd(c);
-                    System.out.print("CD Lagt til: ");
-                    tekstgr.visCD(c);
                 }catch(NumberFormatException e) {
                     System.out.println("Avbrutt CD Innlegg");
                 }

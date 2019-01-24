@@ -1,7 +1,7 @@
 package no.hvl.dat102.OPPG3;
 
-import no.hvl.dat102.ADT.CDarkivADT;
-import no.hvl.dat102.NODE.LinearNode;
+import no.hvl.dat102.OPPG3.ADT.CDarkivADT;
+import no.hvl.dat102.OPPG3.NODE.LinearNode;
 import no.hvl.dat102.OPPG1_2.CD;
 import no.hvl.dat102.OPPG1_2.Sjanger;
 
@@ -15,11 +15,20 @@ public class CDarkiv2 implements CDarkivADT {
         antall = 0;
     }
     public boolean leggTilCd(CD nyCd) {
-        LinearNode<CD> nyNode = new LinearNode<>(nyCd);
-        nyNode.setNeste(start);
-        start = nyNode;
-        antall++;
-        return true;
+        if (finnCd(nyCd.getCdnr()) == null) {
+            LinearNode<CD> nyNode = new LinearNode<>(nyCd);
+            nyNode.setNeste(start);
+            start = nyNode;
+
+            System.out.print("CD Lagt til: ");
+            System.out.println(nyCd.toString());
+            antall++;
+            return true;
+        }else {
+            System.out.println("ERROR: Duplikat CD Nummer");
+            System.out.println();
+            return false;
+        }
     }
     public CD[] hentCdTabell() {
         LinearNode<CD> node = start;

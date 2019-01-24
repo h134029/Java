@@ -1,6 +1,6 @@
 package no.hvl.dat102.OPPG1_2;
 
-import no.hvl.dat102.ADT.CDarkivADT;
+import no.hvl.dat102.OPPG3.ADT.CDarkivADT;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -12,7 +12,7 @@ import java.io.PrintWriter;
 public class Fil {
 
     private static final String SKILLE = "#";
-    private static String CDdir = System.getProperty("user.dir") + "/src/no/hvl/dat102/SAMLINGER/";
+    private static String CDdir = System.getProperty("user.dir") + "/src/no/hvl/dat102/OPPG1_2/SAMLINGER/";
 
     public static CDarkivADT lesFraFil(String filnavn) {
         CDarkivADT cda = null;

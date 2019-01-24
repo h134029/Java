@@ -1,8 +1,8 @@
 package no.hvl.dat102.OPPG3;
 
-import no.hvl.dat102.ADT.CDarkivADT;
+import no.hvl.dat102.OPPG3.ADT.CDarkivADT;
 import no.hvl.dat102.OPPG1_2.CD;
-
+import no.hvl.dat102.OPPG1_2.Tekstgrensesnitt;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -111,10 +111,10 @@ public class Meny extends JFrame {
             // Add new CD
             else if (event.getSource() == nyCD) {
                 try {
+
                     CD c = tekstgr.lesCD();
                     cda.leggTilCd(c);
-                    System.out.print("CD Lagt til: ");
-                    tekstgr.visCD(c);
+
                 }catch(NumberFormatException e) {
                     System.out.println("Avbrutt CD Innlegg");
                 }
