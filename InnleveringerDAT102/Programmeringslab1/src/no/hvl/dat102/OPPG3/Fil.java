@@ -1,5 +1,6 @@
 package no.hvl.dat102.OPPG3;
 
+import no.hvl.dat102.OPPG1_2.Tekstgrensesnitt;
 import no.hvl.dat102.OPPG3.ADT.CDarkivADT;
 import no.hvl.dat102.OPPG1_2.CD;
 import no.hvl.dat102.OPPG1_2.Sjanger;
@@ -13,6 +14,7 @@ public class Fil {
 
     public static CDarkivADT lesFraFil(String filnavn) {
         CDarkiv2 cda = new CDarkiv2();
+        Tekstgrensesnitt tekstgr = new Tekstgrensesnitt();
         try {
 
             // Byte-innstrømm
@@ -42,11 +44,9 @@ public class Fil {
             // Lukk filen
             innfil.close();
         } catch (FileNotFoundException unntak) {
-            System.out.println("Finner ikke filen " + filnavn);
-            System.exit(1);
+            System.out.println("File not found" + filnavn);
         } catch (IOException e) {
-            System.out.println("Feil ved lesing av fil: " + e);
-            System.exit(2);
+            System.out.println("Error reading file: " + e);
         }
         System.out.println();
         return cda;
@@ -78,14 +78,14 @@ public class Fil {
                 utfil.print(SKILLE);
                 utfil.println(tabell[i].getSjanger());
 			}
-			// Lukk filen
+            System.out.println("Written to file: " + filnavn);
+
+            // Lukk filen
 			utfil.close();
 		} catch(FileNotFoundException e) {
-			System.out.print("feil ved åpning av fil: " + filnavn);
-			System.exit(1); // avbryte utføringen
+			System.out.print("Error writing to file " + filnavn);
 		} catch (IOException e) {
-			System.out.println("Feil på skriving til fil: " + e);
-			System.exit(2);// avbryte utføringen
+			System.out.println("Error writing to file: " + e);
 		}
 	}
 }

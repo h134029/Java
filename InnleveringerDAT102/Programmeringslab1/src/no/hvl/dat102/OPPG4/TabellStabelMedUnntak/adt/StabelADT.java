@@ -1,6 +1,6 @@
 package no.hvl.dat102.OPPG4.TabellStabelMedUnntak.adt;
 
-import no.hvl.dat102.exception.EmptyCollectionException;
+import no.hvl.dat102.OPPG4.TabellStabelMedUnntak.exception.EmptyCollectionException;
 
 public interface StabelADT<T> {
 

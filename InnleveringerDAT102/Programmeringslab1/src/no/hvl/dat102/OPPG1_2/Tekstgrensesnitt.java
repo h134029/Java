@@ -8,16 +8,16 @@ public class Tekstgrensesnitt {
 
     public CD lesCD(){
 
-        int cdnr = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn CD nummer: "));
-        String artist = JOptionPane.showInputDialog("Skriv inn Artist: ");
-        String tittel = JOptionPane.showInputDialog("Skriv inn Tittel: ");
-        int release = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn Release år "));
-        String plateskp = JOptionPane.showInputDialog("Skriv inn Plateselskap: ");
+        int cdnr = Integer.parseInt(JOptionPane.showInputDialog("CD Number: "));
+        String artist = JOptionPane.showInputDialog("Artist: ");
+        String tittel = JOptionPane.showInputDialog("Title: ");
+        int release = Integer.parseInt(JOptionPane.showInputDialog("Release year: "));
+        String plateskp = JOptionPane.showInputDialog("Record Company: ");
         Sjanger sjanger = null;
 
         Sjanger[] options = {Sjanger.rock, Sjanger.pop, Sjanger.klassisk, Sjanger.opera};
-        int x = JOptionPane.showOptionDialog(null, "Velg Sjanger",
-                "Klikk!",
+        int x = JOptionPane.showOptionDialog(null, "Pick genre: ",
+                "Click!",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE, null, options, options);
 
         if (x == 0) sjanger = Sjanger.rock;
@@ -55,13 +55,13 @@ public class Tekstgrensesnitt {
 
     public void skrivUtStatistikk(CDarkivADT cda){
 
-        System.out.println("Antall CDER " + cda.antall());
-        System.out.println("Antall Sjanger - ROCK: " + cda.antallSjanger(Sjanger.rock));
-        System.out.println("Antall Sjanger - POP: " + cda.antallSjanger(Sjanger.pop));
-        System.out.println("Antall Sjanger - OPERA: " + cda.antallSjanger(Sjanger.opera));
-        System.out.println("Antall Sjanger - KLASSISK: " + cda.antallSjanger(Sjanger.klassisk));
+        System.out.println("CDs: " + cda.antall());
+        System.out.println("Genre - ROCK: " + cda.antallSjanger(Sjanger.rock));
+        System.out.println("Genre - POP: " + cda.antallSjanger(Sjanger.pop));
+        System.out.println("Genre - OPERA: " + cda.antallSjanger(Sjanger.opera));
+        System.out.println("Genre - KLASSISK: " + cda.antallSjanger(Sjanger.klassisk));
         System.out.println();
-        System.out.println("CDNR#ARTIST#TITTEL#RELEASE#LABEL#SJANGER");
+        System.out.println("CDNR#ARTIST#TITLE#RELEASE#LABEL#GENRE");
         for (int i = 0; i < cda.antall(); i++) {
             System.out.println(cda.hentCdTabell()[i].toString());
         }

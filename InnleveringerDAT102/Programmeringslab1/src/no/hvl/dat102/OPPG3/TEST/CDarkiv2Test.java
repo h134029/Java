@@ -96,10 +96,12 @@ public class CDarkiv2Test {
         assertEquals(C3,tabell[7]);
         assertEquals(10,cdKjede.antall());
 
+        // Test Neste
         assertEquals(cdKjede.finnCd(113).getNeste(),cdKjede.finnCd(112));
         assertEquals(cdKjede.finnCd(112).getNeste(),cdKjede.finnCd(111));
         assertNull(cdKjede.finnCd(111).getNeste());
 
+        // Test Forrige
         assertEquals(cdKjede.forrigeCd(113).getElement(),C4);
         assertEquals(cdKjede.forrigeCd(112).getElement(),C3);
         assertEquals(cdKjede.forrigeCd(111).getElement(),C2);
@@ -114,20 +116,20 @@ public class CDarkiv2Test {
         assertTrue(cdKjede.slettCd(C10.getCdnr()));
 
         // Post delete
-        //assertNull(cdKjede.finnCd(111).getNeste());
-        //assertNull(cdKjede.finnCd(115).getNeste());
-        //assertNull(cdKjede.finnCd(120).getNeste());
-
+        // Test Neste
         assertEquals(cdKjede.finnCd(113).getNeste(),cdKjede.finnCd(112));
         assertEquals(cdKjede.finnCd(116).getNeste(),cdKjede.finnCd(114));
         assertEquals(cdKjede.finnCd(119).getNeste(),cdKjede.finnCd(118));
 
+        // Test Forrige
         assertEquals(cdKjede.forrigeCd(112).getElement(),C3);
         assertEquals(cdKjede.forrigeCd(114).getElement(),C6);
         assertEquals(cdKjede.forrigeCd(118).getElement(),C9);
 
+        // Test Forrige siste element
         assertEquals(cdKjede.forrigeCd(119).getElement(),C9);
 
+        // Test Antall
         assertEquals(7,cdKjede.antall());
 
     }
@@ -212,5 +214,54 @@ public class CDarkiv2Test {
         CDarkivADT cdKjede = Fil.lesFraFil("CDER1");
 
         assertEquals(15,cdKjede.antall());
+    }
+    @Test
+    public void testFinnCd() {
+
+        CDarkiv2 cdKjede = new CDarkiv2();
+
+        CD C1 = new CD(111, "Bon Jovi", "Always", 1995, "Mercury", Sjanger.rock);
+        CD C2 = new CD(112, "Queen", "Bohemian Rhapsody", 1975, "Emi Records", Sjanger.rock);
+        CD C3 = new CD(113, "Bruno Mars", "Wake Up in the Sky", 2018, "Atlantic", Sjanger.pop);
+        CD C4 = new CD(114, "Bon Jovi", "Livin' on a Prayer", 1995, "Mercury", Sjanger.rock);
+        CD C5 = new CD(115, "Queen", "Fat Bottomed Girl", 1975, "Emi Records", Sjanger.rock);
+        CD C6 = new CD(116, "Bruno Mars", "Uptown Funk", 2018, "Atlantic", Sjanger.pop);
+        CD C7 = new CD(117, "Carl Orff", "Carmina Burana",1976,"Tyskland",Sjanger.klassisk);
+
+        assertTrue(cdKjede.leggTilCd(C1));
+        assertTrue(cdKjede.leggTilCd(C2));
+        assertTrue(cdKjede.leggTilCd(C3));
+        assertTrue(cdKjede.leggTilCd(C4));
+        assertTrue(cdKjede.leggTilCd(C5));
+        assertTrue(cdKjede.leggTilCd(C6));
+        assertTrue(cdKjede.leggTilCd(C7));
+
+        assertEquals(C2, cdKjede.finnCd(112).getElement());
+        assertNull(cdKjede.finnCd(110));
+
+    }
+    @Test
+    public void TestForrigeCd() {
+        CDarkiv2 cdKjede = new CDarkiv2();
+
+        CD C1 = new CD(111, "Bon Jovi", "Always", 1995, "Mercury", Sjanger.rock);
+        CD C2 = new CD(112, "Queen", "Bohemian Rhapsody", 1975, "Emi Records", Sjanger.rock);
+        CD C3 = new CD(113, "Bruno Mars", "Wake Up in the Sky", 2018, "Atlantic", Sjanger.pop);
+        CD C4 = new CD(114, "Bon Jovi", "Livin' on a Prayer", 1995, "Mercury", Sjanger.rock);
+        CD C5 = new CD(115, "Queen", "Fat Bottomed Girl", 1975, "Emi Records", Sjanger.rock);
+        CD C6 = new CD(116, "Bruno Mars", "Uptown Funk", 2018, "Atlantic", Sjanger.pop);
+        CD C7 = new CD(117, "Carl Orff", "Carmina Burana",1976,"Tyskland",Sjanger.klassisk);
+
+        assertTrue(cdKjede.leggTilCd(C1));
+        assertTrue(cdKjede.leggTilCd(C2));
+        assertTrue(cdKjede.leggTilCd(C3));
+        assertTrue(cdKjede.leggTilCd(C4));
+        assertTrue(cdKjede.leggTilCd(C5));
+        assertTrue(cdKjede.leggTilCd(C6));
+        assertTrue(cdKjede.leggTilCd(C7));
+
+        // Null handling
+        assertNull(cdKjede.forrigeCd(110));
+
     }
 }

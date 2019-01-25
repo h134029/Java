@@ -19,14 +19,9 @@ public class CDarkiv2 implements CDarkivADT {
             LinearNode<CD> nyNode = new LinearNode<>(nyCd);
             nyNode.setNeste(start);
             start = nyNode;
-
-            System.out.print("CD Lagt til: ");
-            System.out.println(nyCd.toString());
             antall++;
             return true;
         }else {
-            System.out.println("ERROR: Duplikat CD Nummer");
-            System.out.println();
             return false;
         }
     }
@@ -58,8 +53,9 @@ public class CDarkiv2 implements CDarkivADT {
     public LinearNode<CD> forrigeCd(int cdNr) {
         LinearNode<CD> node = start;
         LinearNode<CD> forrigeNode = null;
+        boolean eksisterer = (finnCd(cdNr) != null);
 
-        for (int i = 0; i < antall && node != null; i++) {
+        for (int i = 0; i < antall && node != null && eksisterer; i++) {
             if (node.getNeste().getElement() != null && node.getNeste().getElement().getCdnr() == cdNr) {
                 forrigeNode = node;
                 break;
@@ -75,6 +71,7 @@ public class CDarkiv2 implements CDarkivADT {
         return forrigeNode;
     }
     public boolean slettCd(int cdNr) {
+
         LinearNode<CD> slett = finnCd(cdNr);
         LinearNode<CD> forrige = forrigeCd(cdNr);
 
@@ -86,7 +83,7 @@ public class CDarkiv2 implements CDarkivADT {
             antall--;
             slettet = true;
         }
-        else if (slett != null && forrige == slett) {
+        else if (slett != null) {
             start = slett.getNeste();
             slett.setNeste(null);
             antall--;

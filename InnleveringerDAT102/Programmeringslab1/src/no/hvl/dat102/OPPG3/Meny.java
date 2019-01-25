@@ -27,7 +27,7 @@ public class Meny extends JFrame {
 
 
     public Meny(CDarkivADT cda){
-        super("Meny");
+        super("Menu");
         setLayout(null);
         theHandler handler = new theHandler();
         tekstgr = new Tekstgrensesnitt();
@@ -52,37 +52,37 @@ public class Meny extends JFrame {
         add(tittelNavn);
         tittelNavn.addActionListener(handler);
 
-        lesFil = new JButton("Les av fil");
+        lesFil = new JButton("Read from file");
         lesFil.setBounds(250,50,150,20);
         add(lesFil);
         lesFil.addActionListener(handler);
 
-        skrivFil = new JButton("Skriv til fil");
+        skrivFil = new JButton("Print to file");
         skrivFil.setBounds(250,100,150,20);
         add(skrivFil);
         skrivFil.addActionListener(handler);
 
-        nyCD = new JButton("Legg til ny CD");
+        nyCD = new JButton("Add new CD");
         nyCD.setBounds(250,150,150,20);
         add(nyCD);
         nyCD.addActionListener(handler);
 
-        slettCD = new JButton("Slett CD");
+        slettCD = new JButton("Delete CD");
         slettCD.setBounds(250, 200, 150,20);
         add(slettCD);
         slettCD.addActionListener(handler);
 
-        skrivInfo = new JButton("Skriv ut CD info");
+        skrivInfo = new JButton("Print CD table info");
         skrivInfo.setBounds(250,250,150,20);
         add(skrivInfo);
         skrivInfo.addActionListener(handler);
 
-        artistSok = new JButton("Søk etter Artist");
+        artistSok = new JButton("Search for artist");
         artistSok.setBounds(250,300,150,20);
         add(artistSok);
         artistSok.addActionListener(handler);
 
-        tittelSok = new JButton("Søk etter Tittel");
+        tittelSok = new JButton("Search for title");
         tittelSok.setBounds(250,350,150,20);
         add(tittelSok);
         tittelSok.addActionListener(handler);
@@ -101,7 +101,7 @@ public class Meny extends JFrame {
             // Read File
             if (event.getSource() == lesFil) {
                 cda = Fil.lesFraFil(filnavn.getText());
-                info.setText("Lastet inn: " + filnavn.getText());
+                info.setText("Loaded: " + filnavn.getText());
                 filnavn.setText(null);
             }
             // Write Info
@@ -111,41 +111,50 @@ public class Meny extends JFrame {
             // Add new CD
             else if (event.getSource() == nyCD) {
                 try {
-
                     CD c = tekstgr.lesCD();
-                    cda.leggTilCd(c);
-
+                    boolean lagtTil = cda.leggTilCd(c);
+                    if (lagtTil) {
+                        System.out.print("CD added: ");
+                        tekstgr.visCD(c);
+                    }else {
+                        System.out.println("ERROR: Duplicate CD Number");
+                        System.out.println();
+                    }
                 }catch(NumberFormatException e) {
-                    System.out.println("Avbrutt CD Innlegg");
+                    System.out.println("Abort");
                 }
             }
             // Write File
             else if (event.getSource() == skrivFil) {
                 Fil.skrivTilFil(cda,filskriv.getText());
-                System.out.println("Skrevet til filen: " + filskriv.getText());
                 System.out.println();
                 filskriv.setText(null);
 
             }
             // Search Artist
             else if (event.getSource() == artistSok) {
-                System.out.println("Søk i Artist: \"" + artistNavn.getText() + "\"");
+                System.out.println("Search for artist: \"" + artistNavn.getText() + "\"");
                 tekstgr.skrivUtCdDelstrengArtist(cda,artistNavn.getText());
                 artistNavn.setText(null);
             }
             // Search Title
             else if (event.getSource() == tittelSok) {
-                System.out.println("Søk i Tittel: \"" + tittelNavn.getText() + "\"");
+                System.out.println("Search for title: \"" + tittelNavn.getText() + "\"");
                 tekstgr.skrivUtCdDelstrengTittel(cda,tittelNavn.getText());
                 tittelNavn.setText(null);
             }
             // Delete file
             else if (event.getSource() == slettCD) {
                 try {
-                    int cdnr = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn CD nummer: "));
-                    cda.slettCd(cdnr);
+                    int cdnr = Integer.parseInt(JOptionPane.showInputDialog("CD Number: "));
+                    boolean slettet = cda.slettCd(cdnr);
+                    if (!slettet) {
+                        System.out.println("CD Not found");
+                        System.out.println();
+                    }
+
                 }catch (NumberFormatException e) {
-                    System.out.println("Avbrutt Sletting");
+                    System.out.println("Abort delete");
                     System.out.println();
                 }
             }
@@ -155,6 +164,5 @@ public class Meny extends JFrame {
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(450,450);
-
     }
 }
