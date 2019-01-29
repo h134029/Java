@@ -82,12 +82,16 @@ public class CDarkiv2 implements CDarkivADT {
             slett.setNeste(null);
             antall--;
             slettet = true;
+            System.out.println("DELETED: " + slett.getElement().toString());
+            System.out.println();
         }
         else if (slett != null) {
             start = slett.getNeste();
             slett.setNeste(null);
             antall--;
             slettet = true;
+            System.out.println("DELETED: " + slett.getElement().toString());
+            System.out.println();
         }
         return slettet;
     }
