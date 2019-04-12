@@ -11,27 +11,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/CDarkiv2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
+            <state relative-caret-position="2227">
+              <caret line="134" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3868#3869#0" expanded="true" />
-                <element signature="e#3897#3898#0" expanded="true" />
-                <element signature="e#3937#3938#0" expanded="true" />
-                <element signature="e#3973#3974#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/TEST/CDarkiv2Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4318">
-              <caret line="262" column="24" selection-start-line="262" selection-start-column="24" selection-end-line="262" selection-end-column="24" />
+            <state relative-caret-position="645">
+              <caret line="260" column="42" selection-start-line="260" selection-start-column="42" selection-end-line="260" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,7 +50,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/Meny.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1969">
+            <state relative-caret-position="2108">
               <caret line="129" selection-start-line="129" selection-end-line="129" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -66,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/Fil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="1275">
               <caret line="80" column="60" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -152,10 +148,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="948" />
-    <option name="width" value="1305" />
-    <option name="height" value="1032" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1285" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -185,6 +181,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -217,44 +214,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dat102" type="462c0819:PsiDirectoryNode" />
               <item name="OPPG3" type="462c0819:PsiDirectoryNode" />
-              <item name="ADT" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Programmeringslab1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Programmeringslab1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dat102" type="462c0819:PsiDirectoryNode" />
-              <item name="OPPG3" type="462c0819:PsiDirectoryNode" />
-              <item name="NODE" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Programmeringslab1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Programmeringslab1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dat102" type="462c0819:PsiDirectoryNode" />
-              <item name="OPPG3" type="462c0819:PsiDirectoryNode" />
-              <item name="SAMLINGER" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Programmeringslab1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Programmeringslab1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dat102" type="462c0819:PsiDirectoryNode" />
-              <item name="OPPG3" type="462c0819:PsiDirectoryNode" />
               <item name="TEST" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ForelesningDAT102/dat102/LabyrintUtenRekursjon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ForelesningDAT102/dat102/MengdeU" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -283,7 +255,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CDarkiv2Klient">
+  <component name="RunManager" selected="JUnit.CDarkiv2Test">
     <configuration name="CDarkiv2Klient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="no.hvl.dat102.OPPG3.CDarkiv2Klient" />
       <module name="Programmeringslab1" />
@@ -342,17 +314,17 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.CDarkiv2Klient" />
       <item itemvalue="Application.CDarkivKlient" />
       <item itemvalue="Application.Kalkulator" />
-      <item itemvalue="Application.CDarkiv2Klient" />
       <item itemvalue="JUnit.CDarkiv2Test" />
       <item itemvalue="JUnit.StabelADTTest (1)" />
       <item itemvalue="JUnit.TestKalkulator" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CDarkiv2Klient" />
         <item itemvalue="JUnit.CDarkiv2Test" />
+        <item itemvalue="Application.CDarkiv2Klient" />
         <item itemvalue="JUnit.TestKalkulator" />
         <item itemvalue="Application.Kalkulator" />
         <item itemvalue="JUnit.StabelADTTest (1)" />
@@ -360,9 +332,6 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="CDarkiv2Test - 2019.01.25 at 10h 24m 21s.xml">
-      <configuration name="CDarkiv2Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CDarkiv2Test - 2019.01.25 at 10h 36m 51s.xml">
       <configuration name="CDarkiv2Test" configurationId="JUnit" />
     </history-entry>
@@ -390,17 +359,21 @@
     <history-entry file="CDarkiv2Test - 2019.01.25 at 16h 27m 53s.xml">
       <configuration name="CDarkiv2Test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CDarkiv2Test - 2019.01.29 at 10h 16m 06s.xml">
+      <configuration name="CDarkiv2Test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-8" y="0" width="1285" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20349762" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3127506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32932165" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36944938" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4742451" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -464,23 +437,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG1_2/Sjanger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG2/CD.java" />
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG2/Sjanger.java" />
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG1_2/CDarkiv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="121" column="25" lean-forward="true" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/ADT/CDarkivADT.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -668,10 +627,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/TEST/CDarkiv2Test.java">
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG1_2/Sjanger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4318">
-          <caret line="262" column="24" selection-start-line="262" selection-start-column="24" selection-end-line="262" selection-end-column="24" />
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG1_2/CDarkiv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="121" column="25" lean-forward="true" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/CDarkiv2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2227">
+          <caret line="134" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -688,20 +661,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/Fil.java">
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/Meny.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="80" column="60" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
+        <state relative-caret-position="2108">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/Meny.java">
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/Fil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1969">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        <state relative-caret-position="1275">
+          <caret line="80" column="60" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -715,16 +688,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/CDarkiv2.java">
+    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/OPPG3/TEST/CDarkiv2Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
+        <state relative-caret-position="645">
+          <caret line="260" column="42" selection-start-line="260" selection-start-column="42" selection-end-line="260" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3868#3869#0" expanded="true" />
-            <element signature="e#3897#3898#0" expanded="true" />
-            <element signature="e#3937#3938#0" expanded="true" />
-            <element signature="e#3973#3974#0" expanded="true" />
           </folding>
         </state>
       </provider>
